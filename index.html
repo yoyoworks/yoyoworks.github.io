@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>YOYOworks｜独立开发者</title>
+  <meta name="description" content="YOYOworks：喜欢研究 AI、新技术和效率工具的独立开发者。">
+  <meta name="theme-color" content="#f2eee5">
+  <meta name="color-scheme" content="light">
+  <link rel="canonical" href="https://yoyoworks.github.io/">
+  <style>
+    :root {
+      --paper: #f2eee5;
+      --ink: #18243b;
+      --muted: #647083;
+      --navy: #243b68;
+      --blue: #416b96;
+      --teal: #438f8c;
+      --coral: #dc6e48;
+      --gold: #e4b84d;
+      --line: rgba(24, 36, 59, 0.14);
+      --surface: rgba(249, 247, 241, 0.88);
+      --surface-solid: #fbfaf6;
+      --shadow: 0 18px 50px rgba(24, 36, 59, 0.13);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      min-width: 320px;
+      min-height: 100vh;
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    a, button, summary { -webkit-tap-highlight-color: transparent; }
+    a:focus-visible, button:focus-visible, summary:focus-visible {
+      outline: 3px solid rgba(65, 107, 150, 0.42);
+      outline-offset: 3px;
+    }
+    .site-shell {
+      position: relative;
+      min-height: 100vh;
+      overflow: hidden;
+      isolation: isolate;
+    }
+    .site-nav {
+      position: relative;
+      z-index: 20;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      min-height: 74px;
+      padding: 16px clamp(20px, 5vw, 68px);
+      border-bottom: 1px solid var(--line);
+      background: rgba(242, 238, 229, 0.86);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+    .brand {
+      display: inline-flex;
+      align-items: baseline;
+      color: var(--ink);
+      font-size: 16px;
+      font-weight: 650;
+      letter-spacing: 0.14em;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .brand-works {
+      font-size: 9px;
+      font-weight: 400;
+      letter-spacing: 0.04em;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .nav-link, .projects-summary {
+      display: inline-flex;
+      align-items: center;
+      min-height: 40px;
+      padding: 0 14px;
+      border: 0;
+      border-radius: 999px;
+      color: var(--ink);
+      background: transparent;
+      font: inherit;
+      font-size: 14px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 160ms ease;
+    }
+    .nav-link:hover, .projects-summary:hover { background: rgba(255, 255, 255, 0.72); }
+    .projects-menu { position: relative; }
+    .projects-summary { list-style: none; }
+    .projects-summary::-webkit-details-marker { display: none; }
+    .projects-summary::after {
+      content: "⌄";
+      margin-left: 7px;
+      font-size: 12px;
+      transition: transform 160ms ease;
+    }
+    .projects-menu[open] .projects-summary::after { transform: rotate(180deg); }
+    .projects-list {
+      position: absolute;
+      top: calc(100% + 10px);
+      right: 0;
+      width: 220px;
+      padding: 8px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: rgba(251, 249, 243, 0.98);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+    .project-item {
+      display: block;
+      padding: 12px 13px;
+      border-radius: 11px;
+      color: var(--ink);
+      text-decoration: none;
+      transition: background 160ms ease;
+    }
+    .project-item:hover { background: rgba(65, 107, 150, 0.10); }
+    .project-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+    .project-meta {
+      display: block;
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+    .hero {
+      display: grid;
+      min-height: calc(100vh - 74px);
+      place-items: center;
+      padding: clamp(40px, 8vw, 96px) 20px;
+    }
+    .hero-card {
+      width: min(100%, 640px);
+      padding: clamp(28px, 6vw, 54px);
+      border: 1px solid rgba(24, 36, 59, 0.12);
+      border-radius: 28px;
+      background: var(--surface);
+      box-shadow: 0 16px 52px rgba(24, 36, 59, 0.08);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+    .eyebrow {
+      margin: 0 0 16px;
+      color: var(--muted);
+      font-size: 13px;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+    }
+    .hero-name {
+      display: inline-flex;
+      align-items: baseline;
+      margin: 0;
+      color: var(--ink);
+      font-size: clamp(46px, 10vw, 76px);
+      line-height: 1;
+      letter-spacing: 0.12em;
+    }
+    .hero-name-main { font-weight: 560; }
+    .hero-name-works {
+      margin-left: -0.08em;
+      font-size: 0.27em;
+      font-weight: 400;
+      letter-spacing: 0.03em;
+    }
+    .accent-line {
+      width: 74px;
+      height: 5px;
+      margin: 28px 0;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--coral), var(--gold));
+    }
+    .intro {
+      max-width: 500px;
+      margin: 0;
+      font-size: clamp(19px, 3vw, 23px);
+      line-height: 1.75;
+      letter-spacing: 0.01em;
+    }
+    .contact-block { margin-top: 38px; }
+    .contact-label {
+      margin: 0 0 12px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .contact-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .contact-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0.7rem 1rem;
+      border: 1px solid rgba(24, 36, 59, 0.20);
+      border-radius: 999px;
+      color: var(--ink);
+      background: rgba(255, 255, 255, 0.64);
+      font: inherit;
+      font-size: 15px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: transform 160ms ease, background 160ms ease, border-color 160ms ease;
+    }
+    .contact-link:hover {
+      transform: translateY(-2px);
+      border-color: var(--blue);
+      background: #fff;
+    }
+    .contact-link.primary {
+      border-color: var(--navy);
+      color: #fff;
+      background: var(--navy);
+    }
+    .contact-link.primary:hover { background: var(--blue); }
+    .site-footer {
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .shape {
+      position: absolute;
+      z-index: -1;
+      opacity: 0.95;
+      pointer-events: none;
+    }
+    .shape-a {
+      width: min(44vw, 620px);
+      height: min(46vw, 610px);
+      left: -12vw;
+      top: -7vw;
+      background: var(--navy);
+      clip-path: polygon(0 0, 100% 0, 65% 100%, 0 76%);
+    }
+    .shape-b {
+      width: min(29vw, 430px);
+      height: min(43vw, 570px);
+      right: -5vw;
+      top: 15vh;
+      background: var(--teal);
+      clip-path: polygon(45% 0, 100% 12%, 100% 100%, 0 72%);
+    }
+    .shape-c {
+      width: min(43vw, 650px);
+      height: min(33vw, 470px);
+      right: -9vw;
+      bottom: -9vw;
+      background: var(--blue);
+      clip-path: polygon(25% 0, 100% 8%, 100% 100%, 0 100%);
+    }
+    .shape-d {
+      width: clamp(150px, 18vw, 260px);
+      height: clamp(150px, 18vw, 260px);
+      left: 4vw;
+      bottom: -75px;
+      background: var(--coral);
+      clip-path: polygon(0 35%, 70% 0, 100% 60%, 35% 100%);
+    }
+    .shape-e {
+      width: clamp(82px, 9vw, 132px);
+      height: clamp(82px, 9vw, 132px);
+      right: 22vw;
+      top: 27vh;
+      background: var(--gold);
+      clip-path: polygon(50% 0, 100% 36%, 77% 100%, 14% 82%, 0 22%);
+      opacity: 0.9;
+    }
+    .qr-dialog {
+      width: min(calc(100% - 32px), 360px);
+      padding: 0;
+      border: 1px solid rgba(24, 36, 59, 0.16);
+      border-radius: 24px;
+      color: var(--ink);
+      background: var(--surface-solid);
+      box-shadow: var(--shadow);
+    }
+    .qr-dialog::backdrop {
+      background: rgba(19, 28, 45, 0.55);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+    .qr-content {
+      padding: 24px;
+      text-align: center;
+    }
+    .qr-title {
+      margin: 0;
+      font-size: 21px;
+      font-weight: 600;
+    }
+    .qr-copy {
+      margin: 8px 0 18px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .qr-image {
+      display: block;
+      width: min(100%, 250px);
+      height: auto;
+      margin: 0 auto 20px;
+      border: 10px solid #fff;
+      border-radius: 14px;
+      outline: 1px solid rgba(24, 36, 59, 0.12);
+    }
+    .close-button {
+      width: 100%;
+      min-height: 44px;
+      border: 0;
+      border-radius: 999px;
+      color: #fff;
+      background: var(--navy);
+      font: inherit;
+      cursor: pointer;
+    }
+    .close-button:hover { background: var(--blue); }
+    @media (max-width: 640px) {
+      .site-nav {
+        min-height: 66px;
+        padding: 12px 16px;
+      }
+      .brand { font-size: 14px; }
+      .nav-link, .projects-summary {
+        min-height: 38px;
+        padding: 0 10px;
+        font-size: 13px;
+      }
+      .projects-list { width: 196px; }
+      .hero {
+        min-height: calc(100vh - 66px);
+        padding: 42px 16px 52px;
+      }
+      .hero-card { border-radius: 24px; }
+      .shape-a {
+        width: 72vw;
+        height: 66vw;
+        left: -34vw;
+        top: 34px;
+      }
+      .shape-b {
+        width: 52vw;
+        height: 70vw;
+        right: -27vw;
+        top: 18vh;
+      }
+      .shape-c {
+        width: 75vw;
+        height: 55vw;
+        right: -32vw;
+        bottom: -18vw;
+      }
+      .shape-d {
+        left: -45px;
+        bottom: -65px;
+      }
+      .shape-e {
+        right: 3vw;
+        top: 30vh;
+      }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-nav">
+      <a class="brand" href="#about" aria-label="返回关于我">YOYO<span class="brand-works">works</span></a>
+      <nav class="nav-links" aria-label="主导航">
+        <a class="nav-link" href="#about">关于我</a>
+        <details class="projects-menu">
+          <summary class="projects-summary">Projects</summary>
+          <div class="projects-list">
+            <a class="project-item" href="https://yoyoworks.github.io/ai_free_quota/" target="_blank" rel="noreferrer">
+              <span class="project-title">Free AI Quota<span aria-hidden="true">↗</span></span>
+              <span class="project-meta">AI 免费额度清单</span>
+            </a>
+          </div>
+        </details>
+      </nav>
+    </header>
+    <div class="shape shape-a" aria-hidden="true"></div>
+    <div class="shape shape-b" aria-hidden="true"></div>
+    <div class="shape shape-c" aria-hidden="true"></div>
+    <div class="shape shape-d" aria-hidden="true"></div>
+    <div class="shape shape-e" aria-hidden="true"></div>
+    <main id="about" class="hero">
+      <article class="hero-card">
+        <p class="eyebrow">Independent Developer</p>
+        <h1 class="hero-name"><span class="hero-name-main">YOYO</span><span class="hero-name-works">works</span></h1>
+        <div class="accent-line" aria-hidden="true"></div>
+        <p class="intro">喜欢研究 AI、新技术和效率工具的独立开发者。</p>
+        <section class="contact-block" aria-labelledby="contact-heading">
+          <p id="contact-heading" class="contact-label">找到我</p>
+          <div class="contact-links">
+            <a class="contact-link primary" href="https://github.com/yoyoworks" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="contact-link" href="https://xhslink.cn/m/5k2MaxMFcjo" target="_blank" rel="noreferrer">小红书</a>
+            <a class="contact-link" href="mailto:yoyoworks2026@outlook.com">邮箱</a>
+            <button id="wechat-open" class="contact-link" type="button">微信公众号</button>
+          </div>
+        </section>
+        <footer class="site-footer">© 2026 YOYOworks</footer>
+      </article>
+    </main>
+  </div>
+  <dialog id="wechat-dialog" class="qr-dialog" aria-labelledby="qr-title">
+    <div class="qr-content">
+      <h2 id="qr-title" class="qr-title">微信公众号</h2>
+      <p class="qr-copy">使用微信扫描二维码关注。</p>
+      <img class="qr-image" src="assets/wechat-qr.jpg" alt="YOYOworks 微信公众号二维码" width="430" height="430">
+      <button id="wechat-close" class="close-button" type="button">关闭</button>
+    </div>
+  </dialog>
+  <script>
+    const projectsMenu = document.querySelector('.projects-menu');
+    const wechatDialog = document.getElementById('wechat-dialog');
+    const wechatOpen = document.getElementById('wechat-open');
+    const wechatClose = document.getElementById('wechat-close');
+    document.addEventListener('click', (event) => {
+      if (projectsMenu && !projectsMenu.contains(event.target)) projectsMenu.removeAttribute('open');
+    });
+    wechatOpen.addEventListener('click', () => {
+      if (typeof wechatDialog.showModal === 'function') wechatDialog.showModal();
+      else wechatDialog.setAttribute('open', '');
+    });
+    wechatClose.addEventListener('click', () => wechatDialog.close());
+    wechatDialog.addEventListener('click', (event) => {
+      const rect = wechatDialog.getBoundingClientRect();
+      const inside = event.clientX >= rect.left && event.clientX <= rect.right && event.clientY >= rect.top && event.clientY <= rect.bottom;
+      if (!inside) wechatDialog.close();
+    });
+  </script>
+</body>
+</html>
