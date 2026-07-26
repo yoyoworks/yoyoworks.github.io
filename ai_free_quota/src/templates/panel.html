@@ -1,0 +1,23 @@
+<article{{PANEL_ATTRIBUTES}}>
+  <header class="hero">
+    <nav class="top-nav" aria-label="{{LANGUAGE_NAV_LABEL}}">{{LANGUAGE_NAV}}</nav>
+    <p class="eyebrow">{{EYEBROW}}</p>
+    <h1>{{SHORT_TITLE}}</h1>
+    <p class="summary">{{DESCRIPTION}}</p>
+    <p class="updated">{{UPDATED_LABEL}} <time datetime="{{UPDATED_AT}}">{{UPDATED_AT}}</time></p>
+    <div class="stats">{{STATS}}</div>
+  </header>
+  <section class="answer" aria-labelledby="{{ANSWER_TITLE_ID}}">
+    <h2 id="{{ANSWER_TITLE_ID}}">{{ANSWER_TITLE}}</h2>
+    <p>{{ANSWER_TEXT}}</p>
+  </section>
+  {{SECTIONS}}
+  <section class="notice" aria-labelledby="{{NOTICE_TITLE_ID}}">
+    <h2 id="{{NOTICE_TITLE_ID}}">{{NOTICE_TITLE}}</h2>
+    <p>{{NOTICE_TEXT}}</p>
+  </section>
+  <footer class="footer">
+    <a href="{{DATA_URL}}">{{DATA_LABEL}}</a>
+    <span aria-hidden="true"> · </span>{{FOOTER_TEXT}}
+  </footer>
+</article>
