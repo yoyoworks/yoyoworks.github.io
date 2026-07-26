@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN" class="language-app" data-language="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{{SEO_TITLE}}</title>
+  <meta name="description" content="{{DESCRIPTION}}">
+  <meta name="keywords" content="{{KEYWORDS}}">
+  <meta name="robots" content="index,follow,max-snippet:-1">
+  <link rel="canonical" href="{{CANONICAL_URL}}">
+  <link rel="alternate" hreflang="zh-CN" href="{{ZH_URL}}">
+  <link rel="alternate" hreflang="en" href="{{EN_URL}}">
+  <link rel="alternate" hreflang="x-default" href="{{CANONICAL_URL}}">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{SEO_TITLE}}">
+  <meta property="og:description" content="{{DESCRIPTION}}">
+  <meta property="og:url" content="{{CANONICAL_URL}}">
+  <script type="application/ld+json">{{STRUCTURED_DATA}}</script>
+  <script>
+    (() => {
+      const normalize = value => value === "en" ? "en" : value === "zh" ? "zh" : null;
+      const requested = normalize(new URLSearchParams(location.search).get("lang"));
+      let stored = null;
+      try { stored = normalize(localStorage.getItem("ai-free-quota-language")); } catch (_) {}
+      const languages = navigator.languages?.length ? navigator.languages : [navigator.language || ""];
+      const detected = languages.some(language => language.toLowerCase().startsWith("zh")) ? "zh" : "en";
+      const language = requested || stored || detected;
+      document.documentElement.dataset.language = language;
+      document.documentElement.lang = language === "zh" ? "zh-CN" : "en";
+    })();
+  </script>
+  <link rel="stylesheet" href="./assets/site.css">
+</head>
+<body>
+  <main>
+    {{ZH_PANEL}}
+    {{EN_PANEL}}
+  </main>
+  <script>
+    (() => {
+      const root = document.documentElement;
+      const applyLanguage = (language, persist = true) => {
+        const selected = language === "en" ? "en" : "zh";
+        root.dataset.language = selected;
+        root.lang = selected === "zh" ? "zh-CN" : "en";
+        const panel = document.querySelector(`[data-language-panel="${selected}"]`);
+        if (panel) {
+          document.title = panel.dataset.title;
+          document.querySelector('meta[name="description"]').content = panel.dataset.description;
+        }
+        if (persist) {
+          try { localStorage.setItem("ai-free-quota-language", selected); } catch (_) {}
+        }
+        if (location.search) history.replaceState(null, "", location.pathname + location.hash);
+      };
+      document.querySelectorAll("[data-language-choice]").forEach(button => {
+        button.addEventListener("click", () => applyLanguage(button.dataset.languageChoice));
+      });
+      applyLanguage(root.dataset.language, new URLSearchParams(location.search).has("lang"));
+    })();
+  </script>
+</body>
+</html>

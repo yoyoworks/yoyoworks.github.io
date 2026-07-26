@@ -1,0 +1,572 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-07-26",
+  "date_published": "2026-07-23",
+  "sections": [
+    {
+      "id": "china",
+      "title_zh": "中国国内入口",
+      "title_en": "China-accessible services",
+      "description_zh": "优先收录中国用户更容易注册、实名、充值或直接体验的平台。",
+      "description_en": "Services generally easier for users in China to register for and access."
+    },
+    {
+      "id": "international",
+      "title_zh": "国外 / 国际入口",
+      "title_en": "International AI services",
+      "description_zh": "适合测试国际模型、聚合路由、开源模型和海外 AI API。",
+      "description_en": "International APIs, model routers, open-model platforms, coding tools, and multimodal services."
+    }
+  ],
+  "entries": [
+    {
+      "id": "zhipu-bigmodel",
+      "display_order": 12,
+      "category": "china",
+      "platform_zh": "智谱 BigModel",
+      "platform_en": "Zhipu BigModel",
+      "quota_zh": "新用户注册可获得 2000 万 Tokens 和 120 次图像/视频资源包；官网当前另有邀请好友实名注册得 Tokens 活动，最高可累计领取 2 亿 Tokens 资源包。",
+      "quota_en": "New users can receive 20 million tokens plus 120 image/video credits. The official site also currently advertises a referral campaign with rewards of up to 200 million tokens in total.",
+      "reference": {
+        "label_zh": "官方价格页",
+        "label_en": "Official pricing",
+        "url": "https://bigmodel.cn/pricing"
+      },
+      "signup": {
+        "label_zh": "注册 / 登录",
+        "label_en": "Sign up / Log in",
+        "url": "https://bigmodel.cn/",
+        "is_referral": false
+      },
+      "verified_at": "2026-07-23"
+    },
+    {
+      "id": "baidu-qianfan",
+      "display_order": 3,
+      "category": "china",
+      "platform_zh": "百度千帆",
+      "platform_en": "Baidu Qianfan",
+      "quota_zh": "首次开通后，指定语言模型各提供 100 万 Tokens 免费额度，有效期 3 个月；官网另显示实名新用户可领取 20 元代金券，有效期 1 个月。",
+      "quota_en": "On first activation, selected language models each include 1 million free tokens valid for 3 months. The official site also shows a RMB 20 coupon for verified new users, valid for 1 month.",
+      "reference": {
+        "label_zh": "新用户免费额度",
+        "label_en": "New-user free quota",
+        "url": "https://cloud.baidu.com/doc/qianfan/s/Imi2rpirg"
+      },
+      "signup": {
+        "label_zh": "开通千帆",
+        "label_en": "Activate Qianfan",
+        "url": "https://cloud.baidu.com/product/qianfan.html",
+        "is_referral": false
+      },
+      "verified_at": "2026-07-23"
+    },
+    {
+      "id": "tencent-tokenhub",
+      "display_order": 8,
+      "category": "china",
+      "platform_zh": "腾讯云 TokenHub",
+      "platform_en": "Tencent Cloud TokenHub",
+      "quota_zh": "活动截至 2026 年 12 月 31 日：语言模型和多模态理解模型各提供 100 万 Tokens 免费体验额度，有效期 1 年；图像、视频和 3D 模型另有免费次数或积分。",
+      "quota_en": "Campaign currently runs through December 31, 2026: language and multimodal-understanding models each include 1 million free tokens valid for 1 year; image, video, and 3D models have separate free generations or credits.",
+      "reference": {
+        "label_zh": "新人免费体验包",
+        "label_en": "New-user trial package",
+        "url": "https://cloud.tencent.com.cn/document/product/1823/130053"
+      },
+      "signup": {
+        "label_zh": "TokenHub 控制台",
+        "label_en": "TokenHub console",
+        "url": "https://console.cloud.tencent.com/tokenhub",
+        "is_referral": false
+      },
+      "verified_at": "2026-07-23"
+    },
+    {
+      "id": "workbuddy-codebuddy",
+      "display_order": 0,
+      "category": "china",
+      "platform_zh": "腾讯 WorkBuddy / CodeBuddy",
+      "platform_en": "Tencent WorkBuddy / CodeBuddy",
+      "quota_zh": "个人体验版限时免费，每月 500 积分；WorkBuddy 与 CodeBuddy 同账号积分共享。通过本清单的邀请链接注册，可额外获得 2000 积分，实际到账与适用范围以邀请页面和账号中心显示为准。",
+      "quota_en": "The personal trial tier is currently free and includes 500 credits per month. WorkBuddy and CodeBuddy share the same balance. Signing up through this list can grant an additional 2,000 credits; final eligibility is subject to the signup page and account dashboard.",
+      "reference": {
+        "label_zh": "官方定价",
+        "label_en": "Official pricing",
+        "url": "https://www.codebuddy.cn/docs/workbuddy/Pricing"
+      },
+      "signup": {
+        "label_zh": "邀请注册（额外 2000 积分）",
+        "label_en": "Sign up (+2,000 credits)",
+        "url": "https://www.workbuddy.cn/events/invite?inviteCode=l6vhzq5rk",
+        "is_referral": true
+      },
+      "verified_at": "2026-07-23"
+    },
+    {
+      "id": "qoder-cn",
+      "display_order": 1,
+      "category": "china",
+      "platform_zh": "阿里 Qoder CN",
+      "platform_en": "Alibaba Qoder CN",
+      "quota_zh": "体验版为 ¥0；通过本清单的邀请链接注册可领取 2000 Credits，实际到账与适用范围以 Qoder 注册页面和账号中心显示为准。",
+      "quota_en": "The trial tier is ¥0. Signing up through this list can grant 2,000 credits; final eligibility and credited amount are subject to the Qoder signup page and account dashboard.",
+      "reference": {
+        "label_zh": "官方定价",
+        "label_en": "Official pricing",
+        "url": "https://qoder.com.cn/pricing"
+      },
+      "signup": {
+        "label_zh": "邀请注册（2000 Credits）",
+        "label_en": "Sign up (2,000 credits)",
+        "url": "https://qoder.com.cn/referral?referral_code=2Gq0R8cP9BeuyBpFgNBEmMEd0xwzmz5e",
+        "is_referral": true
+      },
+      "verified_at": "2026-07-23"
+    },
+    {
+      "id": "xiaomi-mimo-code",
+      "display_order": 11,
+      "category": "china",
+      "platform_zh": "小米 MiMo Code / MiMo Auto",
+      "quota_zh": "小米官方 MiMo Code 项目内置 MiMo Auto 限时免费通道，可匿名、零配置开始使用终端 AI 编程助手；免费期限、可用模型、速率和后续登录要求可能调整，以官方项目和产品页面为准。",
+      "reference": {
+        "url": "https://github.com/XiaomiMiMo/MiMo-Code"
+      },
+      "signup": {
+        "url": "https://mimo.xiaomi.com/",
+        "is_referral": false
+      },
+      "verified_at": "2026-07-24"
+    },
+    {
+      "id": "volcengine-ark",
+      "display_order": 9,
+      "category": "china",
+      "platform_zh": "火山方舟",
+      "platform_en": "Volcengine Ark",
+      "quota_zh": "当前产品页显示：Doubao-Seed-2.1-pro、turbo、Evolving 等文本模型各 50 万 Tokens；视频模型各 200 万 Tokens，图像模型各 200 张，语音、向量和联网资源另有免费额度。",
+      "quota_en": "The current product page lists 500,000 tokens for several text models, 2 million tokens for video models, 200 image generations, plus additional speech, embedding, and web-resource quotas.",
+      "reference": {
+        "label_zh": "火山方舟产品页",
+        "label_en": "Ark product page",
+        "url": "https://www.volcengine.com/product/ark"
+      },
+      "signup": {
+        "label_zh": "火山方舟控制台",
+        "label_en": "Ark console",
+        "url": "https://console.volcengine.com/ark/",
+        "is_referral": false
+      },
+      "verified_at": "2026-07-23"
+    },
+    {
+      "id": "volcengine-ark-kb",
+      "display_order": 10,
+      "category": "china",
+      "platform_zh": "火山方舟知识库",
+      "platform_en": "Volcengine Ark Knowledge Base",
+      "quota_zh": "每个火山账号最多创建 1 个免费知识库：免费 30 天，含 100 万 Tokens 模型调用额度，仅对该免费知识库生效，并提供每日 300 次检索。",
+      "quota_en": "Each Volcengine account can create one free knowledge base for 30 days, including 1 million model-call tokens limited to that knowledge base and 300 retrievals per day.",
+      "reference": {
+        "label_zh": "免费知识库说明",
+        "label_en": "Free knowledge-base terms",
+        "url": "https://www.volcengine.com/docs/82379/1904605?lang=zh"
+      },
+      "signup": {
+        "label_zh": "火山方舟控制台",
+        "label_en": "Ark console",
+        "url": "https://console.volcengine.com/ark/",
+        "is_referral": false
+      },
+      "verified_at": "2026-07-23"
+    },
+    {
+      "id": "alibaba-model-studio-cn",
+      "display_order": 2,
+      "category": "china",
+      "platform_zh": "阿里云百炼 Model Studio（中国内地）",
+      "quota_zh": "首次开通阿里云百炼后，华北 2（北京）且服务部署范围为中国内地的模型会按模型发放新人免费额度，有效期 90 天。当前多款文本与多模态模型为 100 万 Tokens，部分图像模型为 100 张、语音识别为 10 小时等，具体额度以价格页和控制台为准。",
+      "reference": {
+        "url": "https://help.aliyun.com/zh/model-studio/new-free-quota/"
+      },
+      "signup": {
+        "url": "https://bailian.console.aliyun.com/",
+        "is_referral": false
+      },
+      "verified_at": "2026-07-24"
+    },
+    {
+      "id": "modelscope-api-inference",
+      "display_order": 5,
+      "category": "china",
+      "platform_zh": "魔搭 ModelScope API Inference",
+      "quota_zh": "注册用户绑定已实名的阿里云账号后，可免费使用开源模型 API Inference。当前每位用户每日总计 2000 次调用、单模型最多 200 次；部分大模型为每日 100 次，模型范围、并发和额度会动态调整。",
+      "reference": {
+        "url": "https://modelscope.cn/docs/model-service/API-Inference/limits"
+      },
+      "signup": {
+        "url": "https://modelscope.cn/my/myaccesstoken",
+        "is_referral": false
+      },
+      "verified_at": "2026-07-24"
+    },
+    {
+      "id": "siliconflow-free-models",
+      "display_order": 6,
+      "category": "china",
+      "platform_zh": "SiliconFlow 硅基流动免费模型",
+      "quota_zh": "完成实名认证后可调用平台全部免费模型，免费模型账单消耗为 0，Rate Limits 使用固定值；部分模型同时提供免费原名版本与名称带 `Pro/` 的收费版本。实际免费模型列表和限速以控制台为准。",
+      "reference": {
+        "url": "https://docs.siliconflow.cn/cn/userguide/rate-limits/rate-limit-and-upgradation"
+      },
+      "signup": {
+        "url": "https://cloud.siliconflow.cn/",
+        "is_referral": false
+      },
+      "verified_at": "2026-07-24"
+    },
+    {
+      "id": "iflytek-spark-lite",
+      "display_order": 4,
+      "category": "china",
+      "platform_zh": "讯飞星火 Spark Lite",
+      "quota_zh": "Spark Lite 语言模型支持免费使用，并提供 OpenAI 兼容的 HTTP API；官方文档同时提供免费额度领取入口。其他 Spark 版本的可用免费资源、并发和有效期以产品页及控制台为准。",
+      "reference": {
+        "url": "https://www.xfyun.cn/doc/spark/HTTP%E8%B0%83%E7%94%A8%E6%96%87%E6%A1%A3.html"
+      },
+      "signup": {
+        "url": "https://console.xfyun.cn/services/sparkapiCenter",
+        "is_referral": false
+      },
+      "verified_at": "2026-07-24"
+    },
+    {
+      "id": "stepfun-step-plan",
+      "display_order": 7,
+      "category": "china",
+      "platform_zh": "阶跃星辰 Step Plan",
+      "quota_zh": "限时活动截至 2026 年 7 月 31 日：新用户可免费体验 Flash Mini 15 天，套餐标称 4 亿 Credits 月使用量，支持旗舰模型与智能路由；每邀请 1 位好友可再延长 15 天，累计最高 90 天。",
+      "reference": {
+        "url": "https://platform.stepfun.com/plan-subscribe"
+      },
+      "signup": {
+        "url": "https://platform.stepfun.com/plan-subscribe",
+        "is_referral": false
+      },
+      "verified_at": "2026-07-24"
+    },
+    {
+      "id": "alibaba-model-studio-sg",
+      "display_order": 13,
+      "category": "international",
+      "platform_zh": "阿里云百炼 Model Studio（新加坡）",
+      "platform_en": "Alibaba Cloud Model Studio (Singapore)",
+      "quota_zh": "首次开通新加坡地域后，按模型自动发放新人免费额度；仅国际部署范围适用，有效期通常为 30～90 天，具体模型额度以控制台为准。",
+      "quota_en": "First-time activation in the Singapore region automatically grants model-specific free quotas. Only International deployment scope is eligible; validity is generally 30–90 days, with exact quotas shown in the console.",
+      "reference": {
+        "label_zh": "新人免费额度",
+        "label_en": "New-user free quota",
+        "url": "https://www.alibabacloud.com/help/en/model-studio/new-free-quota"
+      },
+      "signup": {
+        "label_zh": "Model Studio 控制台",
+        "label_en": "Model Studio console",
+        "url": "https://modelstudio.console.alibabacloud.com/",
+        "is_referral": false
+      },
+      "verified_at": "2026-07-23"
+    },
+    {
+      "id": "tencent-miora",
+      "display_order": 28,
+      "category": "international",
+      "platform_zh": "腾讯 Miora",
+      "platform_en": "Tencent Design Miora",
+      "quota_zh": "新用户当前可领取 1000 Credits。Miora 是腾讯推出的全场景创意智能体工作室，可在同一画布生成图片、视频、3D、UI/UX 等多模态资产；后续额度以账号页面为准。",
+      "quota_en": "New users can currently claim 1,000 credits. Miora is Tencent’s agentic creative studio for producing images, video, 3D, and UI/UX assets on one canvas; future availability is subject to the account page.",
+      "reference": {
+        "label_zh": "腾讯云官方发布",
+        "label_en": "Tencent Cloud official post",
+        "url": "https://www.linkedin.com/company/tencent-cloud/"
+      },
+      "signup": {
+        "label_zh": "注册 Miora",
+        "label_en": "Sign up for Miora",
+        "url": "https://miora.design/login",
+        "is_referral": false
+      },
+      "verified_at": "2026-07-23"
+    },
+    {
+      "id": "google-gemini-api",
+      "display_order": 19,
+      "category": "international",
+      "platform_zh": "Google Gemini API / AI Studio",
+      "platform_en": "Google Gemini API / AI Studio",
+      "quota_zh": "Gemini API 为部分当前模型提供 Free Tier，输入与输出 Tokens 免费，并可免费使用 Google AI Studio；模型、地区和速率限制适用，免费层提交内容可能用于改进 Google 产品。",
+      "quota_en": "The Gemini API offers a Free Tier for selected current models with free input and output tokens plus free Google AI Studio access. Model, region, and rate limits apply, and free-tier content may be used to improve Google products.",
+      "reference": {
+        "label_zh": "Gemini API 定价",
+        "label_en": "Gemini API pricing",
+        "url": "https://ai.google.dev/gemini-api/docs/pricing"
+      },
+      "signup": {
+        "label_zh": "Google AI Studio",
+        "label_en": "Google AI Studio",
+        "url": "https://aistudio.google.com/",
+        "is_referral": false
+      },
+      "verified_at": "2026-07-24"
+    },
+    {
+      "id": "openrouter",
+      "display_order": 25,
+      "category": "international",
+      "platform_zh": "OpenRouter",
+      "platform_en": "OpenRouter",
+      "quota_zh": "可使用 `openrouter/free` 免费路由或带 `:free` 后缀的具体模型。未购买 Credits 的账户当前每天共 50 次免费模型 API 请求；累计购买至少 10 美元 Credits 后为每天 1000 次。免费模型可用性、速率和延迟可能变化。",
+      "quota_en": "Use the `openrouter/free` router or a specific model with the `:free` suffix. Accounts without purchased credits currently receive 50 free-model API requests per day; accounts that have purchased at least $10 in credits receive 1,000 per day. Availability, rate limits, and latency can change.",
+      "reference": {
+        "label_zh": "Free Models Router",
+        "label_en": "Free Models Router",
+        "url": "https://openrouter.ai/docs/guides/routing/routers/free-router"
+      },
+      "signup": {
+        "label_zh": "注册 OpenRouter",
+        "label_en": "Sign up for OpenRouter",
+        "url": "https://openrouter.ai/",
+        "is_referral": false
+      },
+      "verified_at": "2026-07-24"
+    },
+    {
+      "id": "github-models",
+      "display_order": 18,
+      "category": "international",
+      "platform_zh": "GitHub Models",
+      "platform_en": "GitHub Models",
+      "quota_zh": "所有 GitHub 账号均包含免费但限速的 GitHub Models 使用量，额度按模型及 Copilot 套餐有所不同，适合原型和实验。",
+      "quota_en": "All GitHub accounts include free, rate-limited GitHub Models usage. Limits vary by model and Copilot plan and are intended for prototyping and experimentation.",
+      "reference": {
+        "label_zh": "GitHub Models 计费",
+        "label_en": "GitHub Models billing",
+        "url": "https://docs.github.com/en/billing/concepts/product-billing/github-models"
+      },
+      "signup": {
+        "label_zh": "GitHub Models",
+        "label_en": "GitHub Models",
+        "url": "https://github.com/marketplace/models",
+        "is_referral": false
+      },
+      "verified_at": "2026-07-23"
+    },
+    {
+      "id": "nvidia-nim",
+      "display_order": 24,
+      "category": "international",
+      "platform_zh": "NVIDIA NIM",
+      "platform_en": "NVIDIA NIM",
+      "quota_zh": "NVIDIA Developer Program 会员可免费使用托管 NIM API 端点进行原型开发，并可下载 NIM 用于开发和测试；不适用于生产部署。",
+      "quota_en": "NVIDIA Developer Program members receive free access to hosted NIM API endpoints for prototyping and can download NIM for development and testing; this is not a production license.",
+      "reference": {
+        "label_zh": "NIM for Developers",
+        "label_en": "NIM for Developers",
+        "url": "https://developer.nvidia.com/nim"
+      },
+      "signup": {
+        "label_zh": "NVIDIA API Catalog",
+        "label_en": "NVIDIA API Catalog",
+        "url": "https://build.nvidia.com/explore/discover",
+        "is_referral": false
+      },
+      "verified_at": "2026-07-23"
+    },
+    {
+      "id": "cloudflare-workers-ai",
+      "display_order": 15,
+      "category": "international",
+      "platform_zh": "Cloudflare Workers AI",
+      "platform_en": "Cloudflare Workers AI",
+      "quota_zh": "每天免费 10,000 Neurons，额度在每日 00:00 UTC 重置；超过后需要升级 Workers Paid，超出免费部分按量计费。",
+      "quota_en": "Includes 10,000 free Neurons per day, resetting at 00:00 UTC. Usage above the allocation requires Workers Paid and is billed by usage.",
+      "reference": {
+        "label_zh": "Workers AI 定价",
+        "label_en": "Workers AI pricing",
+        "url": "https://developers.cloudflare.com/workers-ai/platform/pricing/"
+      },
+      "signup": {
+        "label_zh": "Cloudflare 控制台",
+        "label_en": "Cloudflare dashboard",
+        "url": "https://dash.cloudflare.com/",
+        "is_referral": false
+      },
+      "verified_at": "2026-07-24"
+    },
+    {
+      "id": "hugging-face-inference",
+      "display_order": 21,
+      "category": "international",
+      "platform_zh": "Hugging Face Inference Providers",
+      "platform_en": "Hugging Face Inference Providers",
+      "quota_zh": "免费用户每月获得 0.10 美元 Inference Providers Credits；PRO 用户每月 2 美元，额度可能调整。Credits 仅适用于由 Hugging Face 路由并计费的请求。",
+      "quota_en": "Free users receive $0.10 in monthly Inference Providers credits and PRO users receive $2.00, subject to change. Credits apply to requests routed and billed through Hugging Face.",
+      "reference": {
+        "label_zh": "Pricing and Billing",
+        "label_en": "Pricing and Billing",
+        "url": "https://huggingface.co/docs/inference-providers/pricing"
+      },
+      "signup": {
+        "label_zh": "注册 Hugging Face",
+        "label_en": "Join Hugging Face",
+        "url": "https://huggingface.co/join",
+        "is_referral": false
+      },
+      "verified_at": "2026-07-24"
+    },
+    {
+      "id": "mistral-api",
+      "display_order": 23,
+      "category": "international",
+      "platform_zh": "Mistral API",
+      "platform_en": "Mistral API",
+      "quota_zh": "默认启用 Free mode，可创建 API Key 并在 Limits 页面所示限制内使用免费层；适合评估和原型。",
+      "quota_en": "Free mode is enabled by default, allowing API-key creation and free-tier usage within the limits shown in the console; intended for evaluation and prototyping.",
+      "reference": {
+        "label_zh": "Usage and limits",
+        "label_en": "Usage and limits",
+        "url": "https://docs.mistral.ai/admin/billing-usage/usage-limits"
+      },
+      "signup": {
+        "label_zh": "Mistral Studio",
+        "label_en": "Mistral Studio",
+        "url": "https://console.mistral.ai/",
+        "is_referral": false
+      },
+      "verified_at": "2026-07-23"
+    },
+    {
+      "id": "cohere",
+      "display_order": 16,
+      "category": "international",
+      "platform_zh": "Cohere",
+      "platform_en": "Cohere",
+      "quota_zh": "注册后可创建免费的 Evaluation / Trial API Key；多数 Chat 模型限速 20 次/分钟，Trial Key 通常每月最多 1000 次 API 调用。",
+      "quota_en": "Registration provides a free evaluation/trial API key. Most Chat models are limited to 20 requests per minute, and trial keys are generally capped at 1,000 API calls per month.",
+      "reference": {
+        "label_zh": "API Key 与限额",
+        "label_en": "API keys and rate limits",
+        "url": "https://docs.cohere.com/v2/docs/rate-limits"
+      },
+      "signup": {
+        "label_zh": "Cohere Dashboard",
+        "label_en": "Cohere Dashboard",
+        "url": "https://dashboard.cohere.com/welcome/register",
+        "is_referral": false
+      },
+      "verified_at": "2026-07-23"
+    },
+    {
+      "id": "meta-model-api",
+      "display_order": 22,
+      "category": "international",
+      "platform_zh": "Meta Model API",
+      "platform_en": "Meta Model API",
+      "quota_zh": "Meta 官方页面当前写明：在上线阶段，每个 Meta Model API 账户初始获得 20 美元免费 Credits，可用于测试提示词、比较输出和原型集成；可用模型、地区和后续权益以注册页面为准。",
+      "quota_en": "Meta's official developer page currently states that, at launch, every Meta Model API account starts with $20 in free credits for prompt testing, output comparison, and prototyping. Model and regional availability and future terms are subject to the signup experience.",
+      "reference": {
+        "url": "https://ai.meta.com/llama"
+      },
+      "signup": {
+        "url": "https://ai.developer.meta.com/",
+        "is_referral": false
+      },
+      "verified_at": "2026-07-24"
+    },
+    {
+      "id": "fireworks-ai",
+      "display_order": 17,
+      "category": "international",
+      "platform_zh": "Fireworks AI",
+      "platform_en": "Fireworks AI",
+      "quota_zh": "新用户可获得 1 美元免费 Credits，用于体验 Serverless Inference 等按量计费能力；额度、适用服务和后续计费规则以官方定价页及账户后台为准。",
+      "quota_en": "New users receive $1 in free credits to try usage-based services such as Serverless Inference. Credit applicability and subsequent billing terms are subject to the official pricing page and account dashboard.",
+      "reference": {
+        "url": "https://fireworks.ai/pricing"
+      },
+      "signup": {
+        "url": "https://app.fireworks.ai/",
+        "is_referral": false
+      },
+      "verified_at": "2026-07-24"
+    },
+    {
+      "id": "replicate-try-free",
+      "display_order": 26,
+      "category": "international",
+      "platform_zh": "Replicate Try for Free",
+      "platform_en": "Replicate Try for Free",
+      "quota_zh": "Replicate 提供 Try for Free 模型集合，注册后无需先购买 Credits 即可对指定模型进行有限次数的免费运行；达到免费次数后需要设置计费并购买 Credits，具体次数因模型而异。",
+      "quota_en": "Replicate offers a Try for Free collection whose selected models can be run a limited number of times after signup without first purchasing credits. Billing and purchased credit are required after the free-use limit, which varies by model.",
+      "reference": {
+        "url": "https://replicate.com/collections/try-for-free"
+      },
+      "signup": {
+        "url": "https://replicate.com/signin",
+        "is_referral": false
+      },
+      "verified_at": "2026-07-24"
+    },
+    {
+      "id": "groqcloud",
+      "display_order": 20,
+      "category": "international",
+      "platform_zh": "GroqCloud",
+      "platform_en": "GroqCloud",
+      "quota_zh": "提供无需升级付费层即可使用的 Free Tier，并按模型限制 RPM、RPD、TPM 和 TPD。当前示例包括 Llama 3.1 8B 的 30 RPM、每日 14,400 次和每日 50 万 Tokens；各模型准确限额以账户 Limits 页面为准。",
+      "quota_en": "GroqCloud provides a Free tier with model-specific RPM, RPD, TPM, and TPD limits. A current example is Llama 3.1 8B at 30 RPM, 14,400 requests per day, and 500,000 tokens per day; exact organization limits are shown in the console.",
+      "reference": {
+        "url": "https://console.groq.com/docs/rate-limits"
+      },
+      "signup": {
+        "url": "https://console.groq.com/keys",
+        "is_referral": false
+      },
+      "verified_at": "2026-07-24"
+    },
+    {
+      "id": "cerebras-inference",
+      "display_order": 14,
+      "category": "international",
+      "platform_zh": "Cerebras Inference",
+      "platform_en": "Cerebras Inference",
+      "quota_zh": "新建账户后可获得 5 美元免费 Credits，用于体验 Cerebras 托管模型；官方同时提供免费层限速，当前多款模型最高每日 100 万 Tokens，具体模型和限额可能调整。",
+      "quota_en": "New accounts receive $5 in free credits to try Cerebras-hosted models. Cerebras also publishes free-tier rate limits, currently up to 1 million tokens per day for several models; model availability and exact limits may change.",
+      "reference": {
+        "url": "https://www.cerebras.ai/pricing"
+      },
+      "signup": {
+        "url": "https://cloud.cerebras.ai/",
+        "is_referral": false
+      },
+      "verified_at": "2026-07-24"
+    },
+    {
+      "id": "sambanova-cloud",
+      "display_order": 27,
+      "category": "international",
+      "platform_zh": "SambaNova Cloud",
+      "platform_en": "SambaNova Cloud",
+      "quota_zh": "未绑定支付方式的账户自动使用 Free Tier。当前部分生产与预览模型提供 20 RPM、每日 20 次请求和每日 20 万 Tokens；模型清单和限额会调整，以官方限额页为准。",
+      "quota_en": "Accounts without a linked payment method use the Free Tier automatically. Selected production and preview models currently include 20 RPM, 20 requests per day, and 200,000 tokens per day; the model list and limits are subject to change.",
+      "reference": {
+        "url": "https://docs.sambanova.ai/docs/en/models/rate-limits"
+      },
+      "signup": {
+        "url": "https://cloud.sambanova.ai/",
+        "is_referral": false
+      },
+      "verified_at": "2026-07-24"
+    }
+  ]
+}

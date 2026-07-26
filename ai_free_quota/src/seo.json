@@ -1,0 +1,25 @@
+{
+  "canonical_site_url": "https://yoyoworks.github.io/ai_free_quota/",
+  "author": "yoyoworks",
+  "title_zh": "AI 免费额度清单：Token、Credits、API 免费试用",
+  "title_en": "Free AI Tokens, Credits and API Trials",
+  "short_title_zh": "AI 免费额度羊毛清单",
+  "short_title_en": "Free AI Quota List",
+  "description_zh": "持续更新面向中国用户的 AI 免费额度清单，覆盖免费 Token、Credits、API 调用、AI 编程工具、智能体与多模态产品试用，并保留官方说明和直接注册入口。",
+  "description_en": "A maintained list of international AI services offering free tokens, credits, API access, coding tools, agents, and multimodal trials, with official references and direct signup links.",
+  "keywords_zh": [
+    "AI 免费额度",
+    "免费 Token",
+    "AI API 免费",
+    "大模型免费试用",
+    "AI Credits",
+    "AI 编程工具免费"
+  ],
+  "keywords_en": [
+    "free AI tokens",
+    "free AI API",
+    "AI credits",
+    "LLM free tier",
+    "AI coding agent free trial"
+  ]
+}
