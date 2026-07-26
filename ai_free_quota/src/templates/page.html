@@ -7,6 +7,7 @@
   <meta name="description" content="{{DESCRIPTION}}">
   <meta name="keywords" content="{{KEYWORDS}}">
   <meta name="robots" content="index,follow,max-snippet:-1">
+  <meta name="theme-color" content="#f8f6f1">
   <link rel="canonical" href="{{CANONICAL_URL}}">
   <link rel="alternate" hreflang="zh-CN" href="{{ZH_URL}}">
   <link rel="alternate" hreflang="en" href="{{EN_URL}}">
@@ -16,9 +17,26 @@
   <meta property="og:description" content="{{DESCRIPTION}}">
   <meta property="og:url" content="{{CANONICAL_URL}}">
   <script type="application/ld+json">{{STRUCTURED_DATA}}</script>
+  <link rel="stylesheet" href="/assets/theme.css">
   <link rel="stylesheet" href="../assets/site.css">
 </head>
 <body>
-  <main>{{PANEL}}</main>
+  <header class="site-nav">
+    <a class="brand" href="/" aria-label="返回 YOYOworks 首页">YOYO<span class="brand-works">works</span></a>
+    <nav class="nav-links" aria-label="主导航">
+      <a class="nav-link" href="/#about">关于我</a>
+      <details class="projects-menu">
+        <summary class="projects-summary">Projects</summary>
+        <div class="projects-list">
+          <a class="project-item" href="/ai_free_quota/" aria-current="page">
+            <span class="project-title">Free AI Quota</span>
+            <span class="project-meta">AI 免费额度清单</span>
+          </a>
+        </div>
+      </details>
+    </nav>
+  </header>
+  <main class="quota-main">{{PANEL}}</main>
+  <script src="/assets/site.js"></script>
 </body>
 </html>

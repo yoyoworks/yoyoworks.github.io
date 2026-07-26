@@ -314,9 +314,9 @@ def render_page(data: dict[str, Any], seo: dict[str, Any], language: str) -> str
     title = seo["title_zh" if zh else "title_en"]
     description = seo["description_zh" if zh else "description_en"]
     if zh:
-        language_nav = '<a href="../?lang=en">English</a>'
+        language_nav = '<a href="../us/" lang="en">English</a>'
     else:
-        language_nav = '<a href="../?lang=zh">中文</a>'
+        language_nav = '<a href="../zh/" lang="zh-CN">中文</a>'
     return render("page.html", {
         "HTML_LANG": copy["html_lang"],
         "SEO_TITLE": escape(title),

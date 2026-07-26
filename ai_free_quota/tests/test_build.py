@@ -49,8 +49,29 @@ class BuildTests(unittest.TestCase):
             self.assertIn('data-language-panel="zh"', root)
             self.assertIn('data-language-panel="en"', root)
             self.assertNotIn("Choose a language", root)
+            self.assertIn('href="/assets/theme.css"', root)
+            self.assertIn('src="/assets/site.js"', root)
+            self.assertIn('class="site-nav"', root)
+            self.assertIn('class="brand"', zh)
             ids = re.findall(r'\sid="([^"]+)"', root)
             self.assertEqual(len(ids), len(set(ids)))
+
+    def test_shared_theme_contract(self) -> None:
+        theme = (ROOT.parent / "assets/theme.css").read_text(encoding="utf-8")
+        expected = {
+            "--yw-paper": "#f8f6f1",
+            "--yw-surface": "#fcfbf7",
+            "--yw-surface-glass": "rgba(252, 251, 247, 0.88)",
+            "--yw-ink": "#18243b",
+            "--yw-muted": "#6c7380",
+            "--yw-navy": "#243b68",
+            "--yw-blue": "#416b96",
+            "--yw-teal": "#438f8c",
+            "--yw-coral": "#d86c48",
+            "--yw-gold": "#ddb24c",
+        }
+        for name, value in expected.items():
+            self.assertIn(f"{name}: {value};", theme)
 
     def test_mobile_layout_uses_cards_without_horizontal_table_width(self) -> None:
         css = (ROOT / "src/static/site.css").read_text(encoding="utf-8")

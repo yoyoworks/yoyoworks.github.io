@@ -10,6 +10,10 @@ assets/                # 主页资源
 ai_free_quota/         # AI 免费额度数据、模板、构建脚本和测试
 ```
 
+`assets/theme.css` 是 YOYOworks 全渠道品牌主题的唯一来源。共享变量统一使用
+`--yw-*` 前缀；主页与 AI Free Quota 直接引用，微信公众号生成器从公仓读取后
+转换为兼容的内联样式。
+
 ## 本地构建
 
 ```bash
