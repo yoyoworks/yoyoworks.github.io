@@ -38,6 +38,7 @@
   --yw-directory-reference-column: 15%;
   --yw-directory-action-column: 15%;
   --yw-directory-label-min: 84px;
+  --yw-directory-clamp-lines: 3;
   --yw-font-label: 12px;
   --yw-font-control: 13px;
   --yw-font-body: 16px;
@@ -319,6 +320,35 @@ summary:focus-visible {
 .yw-text-link--external::after {
   content: "↗";
   font-size: 0.86em;
+}
+
+.yw-disclosure {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--yw-space-1);
+  min-height: var(--yw-control-sm);
+  padding: 0;
+  border: 0;
+  color: var(--yw-blue);
+  background: transparent;
+  font: inherit;
+  font-size: var(--yw-font-control);
+  font-weight: 600;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.yw-disclosure::after {
+  content: "＋";
+  font-size: 0.9em;
+}
+
+.yw-disclosure[aria-expanded="true"]::after {
+  content: "−";
+}
+
+.yw-disclosure:hover {
+  color: var(--yw-navy);
 }
 
 .site-footer {

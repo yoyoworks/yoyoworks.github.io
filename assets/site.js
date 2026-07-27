@@ -27,6 +27,22 @@ function initializeSiteFooter() {
 
 initializeSiteFooter();
 
+document.querySelectorAll("[data-quota-toggle]").forEach((button) => {
+  button.addEventListener("click", () => {
+    const details = document.getElementById(button.getAttribute("aria-controls"));
+    if (!details) {
+      return;
+    }
+
+    const willExpand = button.getAttribute("aria-expanded") !== "true";
+    details.classList.toggle("is-expanded", willExpand);
+    button.setAttribute("aria-expanded", String(willExpand));
+    button.textContent = willExpand
+      ? button.dataset.collapseLabel
+      : button.dataset.expandLabel;
+  });
+});
+
 document.addEventListener("click", (event) => {
   if (projectsMenu && !projectsMenu.contains(event.target)) {
     projectsMenu.removeAttribute("open");

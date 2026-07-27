@@ -80,12 +80,14 @@ class BuildTests(unittest.TestCase):
         skill = (REPO_ROOT / ".agents/skills/yoyoworks-ui/SKILL.md").read_text(encoding="utf-8")
         row = (ROOT / "src/templates/row.html").read_text(encoding="utf-8")
         panel = (ROOT / "src/templates/panel.html").read_text(encoding="utf-8")
+        build_script = (ROOT / "scripts/build.py").read_text(encoding="utf-8")
 
         for selector in (
             ".yw-button",
             ".yw-button--secondary",
             ".yw-language-switch",
             ".yw-text-link",
+            ".yw-disclosure",
         ):
             self.assertIn(selector, theme)
 
@@ -93,13 +95,28 @@ class BuildTests(unittest.TestCase):
         self.assertIn("design-system/MASTER.md", skill)
         self.assertIn("yw-button yw-button--secondary", row)
         self.assertIn("yw-text-link yw-text-link--external", row)
+        self.assertIn("yw-disclosure quota-toggle", build_script)
         self.assertNotIn("quota-actions", panel)
 
     def test_mobile_layout_uses_cards_without_horizontal_table_width(self) -> None:
         css = (ROOT / "src/static/site.css").read_text(encoding="utf-8")
         self.assertIn("@media (max-width: 720px)", css)
         self.assertIn("content: attr(data-label)", css)
+        self.assertIn("-webkit-line-clamp: var(--yw-directory-clamp-lines)", css)
         self.assertNotIn("min-width: 900px", css)
+
+    def test_long_mobile_descriptions_have_localized_disclosure(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            output = Path(directory) / "dist"
+            SITE_BUILD.build(output)
+            zh = (output / "zh/index.html").read_text(encoding="utf-8")
+            en = (output / "us/index.html").read_text(encoding="utf-8")
+
+            self.assertIn('data-expand-label="展开详情"', zh)
+            self.assertIn('data-collapse-label="收起"', zh)
+            self.assertIn('data-expand-label="Expand details"', en)
+            self.assertIn('data-collapse-label="Collapse"', en)
+            self.assertNotIn('data-label="免费额度说明"', zh)
 
     def test_mirror_host_does_not_override_canonical_origin(self) -> None:
         with tempfile.TemporaryDirectory() as directory:

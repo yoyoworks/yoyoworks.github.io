@@ -34,6 +34,8 @@ COPY = {
         "data": "下载 JSON 数据",
         "footer": "持续维护的 AI 免费额度清单",
         "nav_label": "语言导航",
+        "expand": "展开详情",
+        "collapse": "收起",
     },
     "en": {
         "html_lang": "en",
@@ -48,6 +50,8 @@ COPY = {
         "data": "Download JSON data",
         "footer": "Maintained free AI quota list",
         "nav_label": "Language navigation",
+        "expand": "Expand details",
+        "collapse": "Collapse",
     },
 }
 
@@ -204,11 +208,25 @@ def render_rows(
     headers = COPY[language]["headers"]
     rows = []
     for item in selected:
+        quota = item["quota_zh" if zh else "quota_en"]
+        is_collapsible = len(quota) > (58 if zh else 135)
+        quota_details_id = item["id"] + id_suffix + "-quota"
+        quota_toggle = ""
+        if is_collapsible:
+            quota_toggle = (
+                '<button class="yw-disclosure quota-toggle" type="button" '
+                f'data-quota-toggle data-expand-label="{escape(COPY[language]["expand"])}" '
+                f'data-collapse-label="{escape(COPY[language]["collapse"])}" '
+                f'aria-controls="{escape(quota_details_id)}" aria-expanded="false">'
+                f'{escape(COPY[language]["expand"])}</button>'
+            )
         rows.append(render("row.html", {
             "ENTRY_ID": escape(item["id"] + id_suffix),
             "PLATFORM": escape(item["platform_zh" if zh else "platform_en"]),
-            "QUOTA": escape(item["quota_zh" if zh else "quota_en"]),
-            "QUOTA_HEADER": escape(headers[1]),
+            "QUOTA": escape(quota),
+            "QUOTA_COLLAPSIBLE_CLASS": " is-collapsible" if is_collapsible else "",
+            "QUOTA_DETAILS_ID": escape(quota_details_id),
+            "QUOTA_TOGGLE": quota_toggle,
             "REFERENCE_HEADER": escape(headers[2]),
             "REFERENCE_URL": escape(item["reference"]["url"]),
             "REFERENCE_LABEL": escape(reference_label(item, language)),

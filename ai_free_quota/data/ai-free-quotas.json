@@ -129,7 +129,7 @@
       "display_order": 11,
       "category": "china",
       "platform_zh": "小米 MiMo Code / MiMo Auto",
-      "quota_zh": "小米官方 MiMo Code 项目内置 MiMo Auto 限时免费通道，可匿名、零配置开始使用终端 AI 编程助手；免费期限、可用模型、速率和后续登录要求可能调整，以官方项目和产品页面为准。",
+      "quota_zh": "MiMo Auto 当前限时免费，可匿名、零配置使用终端 AI 编程助手。免费期限、可用模型、速率和后续登录要求可能调整，以小米 MiMo Code 官方项目和产品页面为准。",
       "reference": {
         "url": "https://github.com/XiaomiMiMo/MiMo-Code"
       },
@@ -186,7 +186,7 @@
       "display_order": 2,
       "category": "china",
       "platform_zh": "阿里云百炼 Model Studio（中国内地）",
-      "quota_zh": "首次开通阿里云百炼后，华北 2（北京）且服务部署范围为中国内地的模型会按模型发放新人免费额度，有效期 90 天。当前多款文本与多模态模型为 100 万 Tokens，部分图像模型为 100 张、语音识别为 10 小时等，具体额度以价格页和控制台为准。",
+      "quota_zh": "新人免费额度有效期 90 天：多款文本与多模态模型为 100 万 Tokens，部分图像模型为 100 张、语音识别为 10 小时。首次开通阿里云百炼后自动发放，仅适用于华北 2（北京）且部署范围为中国内地的模型，具体以价格页和控制台为准。",
       "reference": {
         "url": "https://help.aliyun.com/zh/model-studio/new-free-quota/"
       },
@@ -201,7 +201,7 @@
       "display_order": 5,
       "category": "china",
       "platform_zh": "魔搭 ModelScope API Inference",
-      "quota_zh": "注册用户绑定已实名的阿里云账号后，可免费使用开源模型 API Inference。当前每位用户每日总计 2000 次调用、单模型最多 200 次；部分大模型为每日 100 次，模型范围、并发和额度会动态调整。",
+      "quota_zh": "每位用户每日共 2000 次免费调用，单模型最多 200 次；部分大模型为每日 100 次。注册后需绑定已实名的阿里云账号，模型范围、并发和额度会动态调整。",
       "reference": {
         "url": "https://modelscope.cn/docs/model-service/API-Inference/limits"
       },
@@ -231,7 +231,7 @@
       "display_order": 4,
       "category": "china",
       "platform_zh": "讯飞星火 Spark Lite",
-      "quota_zh": "Spark Lite 语言模型支持免费使用，并提供 OpenAI 兼容的 HTTP API；官方文档同时提供免费额度领取入口。其他 Spark 版本的可用免费资源、并发和有效期以产品页及控制台为准。",
+      "quota_zh": "Spark Lite 语言模型可免费使用，并提供 OpenAI 兼容的 HTTP API；官方文档另有免费额度领取入口。其他 Spark 版本的免费资源、并发和有效期以产品页及控制台为准。",
       "reference": {
         "url": "https://www.xfyun.cn/doc/spark/HTTP%E8%B0%83%E7%94%A8%E6%96%87%E6%A1%A3.html"
       },
@@ -246,7 +246,7 @@
       "display_order": 7,
       "category": "china",
       "platform_zh": "阶跃星辰 Step Plan",
-      "quota_zh": "限时活动截至 2026 年 7 月 31 日：新用户可免费体验 Flash Mini 15 天，套餐标称 4 亿 Credits 月使用量，支持旗舰模型与智能路由；每邀请 1 位好友可再延长 15 天，累计最高 90 天。",
+      "quota_zh": "新用户可免费体验 Flash Mini 15 天，套餐标称每月 4 亿 Credits；活动截至 2026 年 7 月 31 日。每邀请 1 位好友可延长 15 天，累计最高 90 天，并支持旗舰模型与智能路由。",
       "reference": {
         "url": "https://platform.stepfun.com/plan-subscribe"
       },
@@ -262,8 +262,8 @@
       "category": "international",
       "platform_zh": "阿里云百炼 Model Studio（新加坡）",
       "platform_en": "Alibaba Cloud Model Studio (Singapore)",
-      "quota_zh": "首次开通新加坡地域后，按模型自动发放新人免费额度；仅国际部署范围适用，有效期通常为 30～90 天，具体模型额度以控制台为准。",
-      "quota_en": "First-time activation in the Singapore region automatically grants model-specific free quotas. Only International deployment scope is eligible; validity is generally 30–90 days, with exact quotas shown in the console.",
+      "quota_zh": "新人免费额度通常有效 30～90 天，首次开通新加坡地域后按模型自动发放；仅国际部署范围适用，具体额度以控制台为准。",
+      "quota_en": "New-user quotas are generally valid for 30–90 days and are granted by model after first activation in the Singapore region. Only International deployment scope is eligible; exact quotas appear in the console.",
       "reference": {
         "label_zh": "新人免费额度",
         "label_en": "New-user free quota",
@@ -325,8 +325,8 @@
       "category": "international",
       "platform_zh": "OpenRouter",
       "platform_en": "OpenRouter",
-      "quota_zh": "可使用 `openrouter/free` 免费路由或带 `:free` 后缀的具体模型。未购买 Credits 的账户当前每天共 50 次免费模型 API 请求；累计购买至少 10 美元 Credits 后为每天 1000 次。免费模型可用性、速率和延迟可能变化。",
-      "quota_en": "Use the `openrouter/free` router or a specific model with the `:free` suffix. Accounts without purchased credits currently receive 50 free-model API requests per day; accounts that have purchased at least $10 in credits receive 1,000 per day. Availability, rate limits, and latency can change.",
+      "quota_zh": "未购买 Credits 的账户每天可发起 50 次免费模型 API 请求；累计购买至少 10 美元 Credits 后为每天 1000 次。使用 `openrouter/free` 或带 `:free` 后缀的模型，实际可用性、速率和延迟可能变化。",
+      "quota_en": "Accounts without purchased credits receive 50 free-model API requests per day; purchasing at least $10 in credits raises the limit to 1,000 per day. Use `openrouter/free` or a model with the `:free` suffix; availability, rate limits, and latency can change.",
       "reference": {
         "label_zh": "Free Models Router",
         "label_en": "Free Models Router",
@@ -523,8 +523,8 @@
       "category": "international",
       "platform_zh": "GroqCloud",
       "platform_en": "GroqCloud",
-      "quota_zh": "提供无需升级付费层即可使用的 Free Tier，并按模型限制 RPM、RPD、TPM 和 TPD。当前示例包括 Llama 3.1 8B 的 30 RPM、每日 14,400 次和每日 50 万 Tokens；各模型准确限额以账户 Limits 页面为准。",
-      "quota_en": "GroqCloud provides a Free tier with model-specific RPM, RPD, TPM, and TPD limits. A current example is Llama 3.1 8B at 30 RPM, 14,400 requests per day, and 500,000 tokens per day; exact organization limits are shown in the console.",
+      "quota_zh": "Free Tier 无需升级付费层；当前 Llama 3.1 8B 示例额度为 30 RPM、每日 14,400 次和每日 50 万 Tokens。不同模型分别限制 RPM、RPD、TPM 和 TPD，准确额度以账户 Limits 页面为准。",
+      "quota_en": "The Free tier requires no paid upgrade. A current Llama 3.1 8B example includes 30 RPM, 14,400 requests per day, and 500,000 tokens per day. RPM, RPD, TPM, and TPD limits vary by model; exact limits appear in the console.",
       "reference": {
         "url": "https://console.groq.com/docs/rate-limits"
       },
@@ -557,8 +557,8 @@
       "category": "international",
       "platform_zh": "SambaNova Cloud",
       "platform_en": "SambaNova Cloud",
-      "quota_zh": "未绑定支付方式的账户自动使用 Free Tier。当前部分生产与预览模型提供 20 RPM、每日 20 次请求和每日 20 万 Tokens；模型清单和限额会调整，以官方限额页为准。",
-      "quota_en": "Accounts without a linked payment method use the Free Tier automatically. Selected production and preview models currently include 20 RPM, 20 requests per day, and 200,000 tokens per day; the model list and limits are subject to change.",
+      "quota_zh": "Free Tier 当前为部分模型提供 20 RPM、每日 20 次请求和每日 20 万 Tokens；未绑定支付方式的账户会自动使用免费层。模型清单和限额会调整，以官方限额页为准。",
+      "quota_en": "The Free Tier currently gives selected models 20 RPM, 20 requests per day, and 200,000 tokens per day. Accounts without a linked payment method use it automatically; the model list and limits may change.",
       "reference": {
         "url": "https://docs.sambanova.ai/docs/en/models/rate-limits"
       },

@@ -14,7 +14,10 @@ system. Shared visual values remain in `assets/theme.css`.
 
 - Desktop and tablet use a structured table.
 - Mobile converts each row into a flat content card.
-- Mobile content remains fully visible; do not collapse quota descriptions.
+- Long mobile descriptions show a short preview and expand independently.
+- Short descriptions remain fully visible without an extra control.
+- Descriptions lead with quota, validity, and the main eligibility condition.
+- Reference and registration actions remain visible while details are collapsed.
 - Desktop actions are compact and fixed-width.
 - Mobile actions align with their field labels without filling the entire card.
 - Desktop reference and registration columns center their headers and controls.
