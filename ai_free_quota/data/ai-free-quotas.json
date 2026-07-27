@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-07-26",
+  "updated_at": "2026-07-27",
   "date_published": "2026-07-23",
   "sections": [
     {
@@ -38,7 +38,7 @@
         "url": "https://bigmodel.cn/",
         "is_referral": false
       },
-      "verified_at": "2026-07-23"
+      "verified_at": "2026-07-27"
     },
     {
       "id": "baidu-qianfan",
@@ -59,7 +59,7 @@
         "url": "https://cloud.baidu.com/product/qianfan.html",
         "is_referral": false
       },
-      "verified_at": "2026-07-23"
+      "verified_at": "2026-07-27"
     },
     {
       "id": "tencent-tokenhub",
@@ -80,7 +80,7 @@
         "url": "https://console.cloud.tencent.com/tokenhub",
         "is_referral": false
       },
-      "verified_at": "2026-07-23"
+      "verified_at": "2026-07-27"
     },
     {
       "id": "workbuddy-codebuddy",
@@ -88,8 +88,8 @@
       "category": "china",
       "platform_zh": "腾讯 WorkBuddy / CodeBuddy",
       "platform_en": "Tencent WorkBuddy / CodeBuddy",
-      "quota_zh": "个人体验版限时免费，每月 500 积分；WorkBuddy 与 CodeBuddy 同账号积分共享。通过本清单的邀请链接注册，可额外获得 2000 积分，实际到账与适用范围以邀请页面和账号中心显示为准。",
-      "quota_en": "The personal trial tier is currently free and includes 500 credits per month. WorkBuddy and CodeBuddy share the same balance. Signing up through this list can grant an additional 2,000 credits; final eligibility is subject to the signup page and account dashboard.",
+      "quota_zh": "已并入 Buddy AI 产品体系。个人体验版免费，每月含 500 基础积分；WorkBuddy 与 CodeBuddy 使用同一账号并共享积分。",
+      "quota_en": "Now part of the Buddy AI product suite. The free personal trial includes 500 base credits per month, shared across WorkBuddy and CodeBuddy under the same account.",
       "reference": {
         "label_zh": "官方定价",
         "label_en": "Official pricing",
@@ -101,28 +101,28 @@
         "url": "https://www.workbuddy.cn/events/invite?inviteCode=l6vhzq5rk",
         "is_referral": true
       },
-      "verified_at": "2026-07-23"
+      "verified_at": "2026-07-27"
     },
     {
       "id": "qoder-cn",
       "display_order": 1,
       "category": "china",
-      "platform_zh": "阿里 Qoder CN",
-      "platform_en": "Alibaba Qoder CN",
-      "quota_zh": "体验版为 ¥0；通过本清单的邀请链接注册可领取 2000 Credits，实际到账与适用范围以 Qoder 注册页面和账号中心显示为准。",
-      "quota_en": "The trial tier is ¥0. Signing up through this list can grant 2,000 credits; final eligibility and credited amount are subject to the Qoder signup page and account dashboard.",
+      "platform_zh": "阿里 Qoder CN 全家桶",
+      "platform_en": "Alibaba Qoder CN Suite",
+      "quota_zh": "体验版免费，含 2 周 Pro 试用和 300 Credits；Credits 可在 IDE、JetBrains、QoderWork、CLI、QoderWake 与 Mobile 间共享。Qwen3.7-Max 限时活动截至 2026 年 7 月 31 日：QoderWork 与 Qoder CLI 每天可用 200 次免费模型请求。",
+      "quota_en": "The free tier includes a two-week Pro trial and 300 credits shared across IDE, JetBrains, QoderWork, CLI, QoderWake, and Mobile. Through July 31, 2026, QoderWork and Qoder CLI also include 200 free Qwen3.7-Max model requests per day.",
       "reference": {
-        "label_zh": "官方定价",
-        "label_en": "Official pricing",
-        "url": "https://qoder.com.cn/pricing"
+        "label_zh": "账号与订阅",
+        "label_en": "Accounts and subscriptions",
+        "url": "https://help.aliyun.com/zh/lingma/account-and-subscription"
       },
       "signup": {
-        "label_zh": "邀请注册（2000 Credits）",
-        "label_en": "Sign up (2,000 credits)",
-        "url": "https://qoder.com.cn/referral?referral_code=2Gq0R8cP9BeuyBpFgNBEmMEd0xwzmz5e",
-        "is_referral": true
+        "label_zh": "注册 Qoder CN",
+        "label_en": "Sign up for Qoder CN",
+        "url": "https://qoder.com.cn/",
+        "is_referral": false
       },
-      "verified_at": "2026-07-23"
+      "verified_at": "2026-07-27"
     },
     {
       "id": "xiaomi-mimo-code",
@@ -137,7 +137,7 @@
         "url": "https://mimo.xiaomi.com/",
         "is_referral": false
       },
-      "verified_at": "2026-07-24"
+      "verified_at": "2026-07-27"
     },
     {
       "id": "volcengine-ark",
@@ -158,7 +158,7 @@
         "url": "https://console.volcengine.com/ark/",
         "is_referral": false
       },
-      "verified_at": "2026-07-23"
+      "verified_at": "2026-07-27"
     },
     {
       "id": "volcengine-ark-kb",
@@ -179,14 +179,14 @@
         "url": "https://console.volcengine.com/ark/",
         "is_referral": false
       },
-      "verified_at": "2026-07-23"
+      "verified_at": "2026-07-27"
     },
     {
       "id": "alibaba-model-studio-cn",
       "display_order": 2,
       "category": "china",
       "platform_zh": "阿里云百炼 Model Studio（中国内地）",
-      "quota_zh": "新人免费额度有效期 90 天：多款文本与多模态模型为 100 万 Tokens，部分图像模型为 100 张、语音识别为 10 小时。首次开通阿里云百炼后自动发放，仅适用于华北 2（北京）且部署范围为中国内地的模型，具体以价格页和控制台为准。",
+      "quota_zh": "首次开通后自动发放新人免费额度，有效期 90 天；华北 2（北京）的多款文本与多模态模型通常各含 100 万 Tokens，仅适用于实时推理。具体模型和额度以官方清单及控制台为准。",
       "reference": {
         "url": "https://help.aliyun.com/zh/model-studio/new-free-quota/"
       },
@@ -194,7 +194,7 @@
         "url": "https://bailian.console.aliyun.com/",
         "is_referral": false
       },
-      "verified_at": "2026-07-24"
+      "verified_at": "2026-07-27"
     },
     {
       "id": "modelscope-api-inference",
@@ -209,7 +209,7 @@
         "url": "https://modelscope.cn/my/myaccesstoken",
         "is_referral": false
       },
-      "verified_at": "2026-07-24"
+      "verified_at": "2026-07-27"
     },
     {
       "id": "siliconflow-free-models",
@@ -224,7 +224,7 @@
         "url": "https://cloud.siliconflow.cn/",
         "is_referral": false
       },
-      "verified_at": "2026-07-24"
+      "verified_at": "2026-07-27"
     },
     {
       "id": "iflytek-spark-lite",
@@ -239,7 +239,7 @@
         "url": "https://console.xfyun.cn/services/sparkapiCenter",
         "is_referral": false
       },
-      "verified_at": "2026-07-24"
+      "verified_at": "2026-07-27"
     },
     {
       "id": "stepfun-step-plan",
@@ -254,7 +254,7 @@
         "url": "https://platform.stepfun.com/plan-subscribe",
         "is_referral": false
       },
-      "verified_at": "2026-07-24"
+      "verified_at": "2026-07-27"
     },
     {
       "id": "alibaba-model-studio-sg",
@@ -275,7 +275,7 @@
         "url": "https://modelstudio.console.alibabacloud.com/",
         "is_referral": false
       },
-      "verified_at": "2026-07-23"
+      "verified_at": "2026-07-27"
     },
     {
       "id": "tencent-miora",
@@ -296,7 +296,7 @@
         "url": "https://miora.design/login",
         "is_referral": false
       },
-      "verified_at": "2026-07-23"
+      "verified_at": "2026-07-27"
     },
     {
       "id": "google-gemini-api",
@@ -317,7 +317,7 @@
         "url": "https://aistudio.google.com/",
         "is_referral": false
       },
-      "verified_at": "2026-07-24"
+      "verified_at": "2026-07-27"
     },
     {
       "id": "openrouter",
@@ -325,8 +325,8 @@
       "category": "international",
       "platform_zh": "OpenRouter",
       "platform_en": "OpenRouter",
-      "quota_zh": "未购买 Credits 的账户每天可发起 50 次免费模型 API 请求；累计购买至少 10 美元 Credits 后为每天 1000 次。使用 `openrouter/free` 或带 `:free` 后缀的模型，实际可用性、速率和延迟可能变化。",
-      "quota_en": "Accounts without purchased credits receive 50 free-model API requests per day; purchasing at least $10 in credits raises the limit to 1,000 per day. Use `openrouter/free` or a model with the `:free` suffix; availability, rate limits, and latency can change.",
+      "quota_zh": "累计购买少于 10 Credits 的账户每天可发起 50 次免费模型 API 请求；累计购买至少 10 Credits 后为每天 1000 次。使用 `openrouter/free` 或带 `:free` 后缀的模型，实际可用性、速率和延迟可能变化。",
+      "quota_en": "Accounts with fewer than 10 purchased credits receive 50 free-model API requests per day; purchasing at least 10 credits raises the limit to 1,000 per day. Use `openrouter/free` or a model with the `:free` suffix; availability, rate limits, and latency can change.",
       "reference": {
         "label_zh": "Free Models Router",
         "label_en": "Free Models Router",
@@ -338,7 +338,7 @@
         "url": "https://openrouter.ai/",
         "is_referral": false
       },
-      "verified_at": "2026-07-24"
+      "verified_at": "2026-07-27"
     },
     {
       "id": "github-models",
@@ -359,7 +359,7 @@
         "url": "https://github.com/marketplace/models",
         "is_referral": false
       },
-      "verified_at": "2026-07-23"
+      "verified_at": "2026-07-27"
     },
     {
       "id": "nvidia-nim",
@@ -380,7 +380,7 @@
         "url": "https://build.nvidia.com/explore/discover",
         "is_referral": false
       },
-      "verified_at": "2026-07-23"
+      "verified_at": "2026-07-27"
     },
     {
       "id": "cloudflare-workers-ai",
@@ -401,7 +401,7 @@
         "url": "https://dash.cloudflare.com/",
         "is_referral": false
       },
-      "verified_at": "2026-07-24"
+      "verified_at": "2026-07-27"
     },
     {
       "id": "hugging-face-inference",
@@ -422,7 +422,7 @@
         "url": "https://huggingface.co/join",
         "is_referral": false
       },
-      "verified_at": "2026-07-24"
+      "verified_at": "2026-07-27"
     },
     {
       "id": "mistral-api",
@@ -443,7 +443,7 @@
         "url": "https://console.mistral.ai/",
         "is_referral": false
       },
-      "verified_at": "2026-07-23"
+      "verified_at": "2026-07-27"
     },
     {
       "id": "cohere",
@@ -464,7 +464,7 @@
         "url": "https://dashboard.cohere.com/welcome/register",
         "is_referral": false
       },
-      "verified_at": "2026-07-23"
+      "verified_at": "2026-07-27"
     },
     {
       "id": "meta-model-api",
@@ -481,7 +481,7 @@
         "url": "https://ai.developer.meta.com/",
         "is_referral": false
       },
-      "verified_at": "2026-07-24"
+      "verified_at": "2026-07-27"
     },
     {
       "id": "fireworks-ai",
@@ -498,7 +498,7 @@
         "url": "https://app.fireworks.ai/",
         "is_referral": false
       },
-      "verified_at": "2026-07-24"
+      "verified_at": "2026-07-27"
     },
     {
       "id": "replicate-try-free",
@@ -515,7 +515,7 @@
         "url": "https://replicate.com/signin",
         "is_referral": false
       },
-      "verified_at": "2026-07-24"
+      "verified_at": "2026-07-27"
     },
     {
       "id": "groqcloud",
@@ -532,7 +532,7 @@
         "url": "https://console.groq.com/keys",
         "is_referral": false
       },
-      "verified_at": "2026-07-24"
+      "verified_at": "2026-07-27"
     },
     {
       "id": "cerebras-inference",
@@ -549,7 +549,7 @@
         "url": "https://cloud.cerebras.ai/",
         "is_referral": false
       },
-      "verified_at": "2026-07-24"
+      "verified_at": "2026-07-27"
     },
     {
       "id": "sambanova-cloud",
@@ -566,7 +566,7 @@
         "url": "https://cloud.sambanova.ai/",
         "is_referral": false
       },
-      "verified_at": "2026-07-24"
+      "verified_at": "2026-07-27"
     }
   ]
 }

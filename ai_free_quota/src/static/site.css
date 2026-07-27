@@ -312,6 +312,10 @@
   display: none;
 }
 
+.quota-toggle[hidden] {
+  display: none;
+}
+
 .quota-footer {
   text-align: center;
 }

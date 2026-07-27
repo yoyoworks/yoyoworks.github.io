@@ -27,7 +27,22 @@ function initializeSiteFooter() {
 
 initializeSiteFooter();
 
-document.querySelectorAll("[data-quota-toggle]").forEach((button) => {
+const quotaToggles = Array.from(document.querySelectorAll("[data-quota-toggle]"));
+
+function syncQuotaToggles() {
+  quotaToggles.forEach((button) => {
+    const details = document.getElementById(button.getAttribute("aria-controls"));
+    if (!details) {
+      return;
+    }
+
+    const isExpanded = button.getAttribute("aria-expanded") === "true";
+    const isClamped = getComputedStyle(details).webkitLineClamp !== "none";
+    button.hidden = !isClamped || (!isExpanded && details.scrollHeight <= details.clientHeight + 1);
+  });
+}
+
+quotaToggles.forEach((button) => {
   button.addEventListener("click", () => {
     const details = document.getElementById(button.getAttribute("aria-controls"));
     if (!details) {
@@ -41,6 +56,21 @@ document.querySelectorAll("[data-quota-toggle]").forEach((button) => {
       ? button.dataset.collapseLabel
       : button.dataset.expandLabel;
   });
+});
+
+syncQuotaToggles();
+window.addEventListener("load", syncQuotaToggles);
+if (document.fonts?.ready) {
+  document.fonts.ready.then(syncQuotaToggles);
+}
+document.querySelectorAll("[data-language-choice]").forEach((button) => {
+  button.addEventListener("click", () => requestAnimationFrame(syncQuotaToggles));
+});
+
+let quotaResizeFrame;
+window.addEventListener("resize", () => {
+  cancelAnimationFrame(quotaResizeFrame);
+  quotaResizeFrame = requestAnimationFrame(syncQuotaToggles);
 });
 
 document.addEventListener("click", (event) => {

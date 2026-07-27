@@ -116,7 +116,16 @@ class BuildTests(unittest.TestCase):
             self.assertIn('data-collapse-label="收起"', zh)
             self.assertIn('data-expand-label="Expand details"', en)
             self.assertIn('data-collapse-label="Collapse"', en)
+            self.assertIn('type="button" hidden data-quota-toggle', zh)
             self.assertNotIn('data-label="免费额度说明"', zh)
+
+    def test_mobile_disclosure_uses_rendered_overflow(self) -> None:
+        site_script = (REPO_ROOT / "assets/site.js").read_text(encoding="utf-8")
+        build_script = (ROOT / "scripts/build.py").read_text(encoding="utf-8")
+
+        self.assertIn("details.scrollHeight <= details.clientHeight + 1", site_script)
+        self.assertIn("getComputedStyle(details).webkitLineClamp", site_script)
+        self.assertNotIn("len(quota)", build_script)
 
     def test_mirror_host_does_not_override_canonical_origin(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
