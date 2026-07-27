@@ -4,25 +4,22 @@
     <div class="quota-shape teal" aria-hidden="true"></div>
     <div class="quota-shape coral" aria-hidden="true"></div>
     <div class="quota-shape gold" aria-hidden="true"></div>
-    <nav class="quota-actions" aria-label="{{LANGUAGE_NAV_LABEL}}">{{LANGUAGE_NAV}}</nav>
     <p class="quota-eyebrow">{{EYEBROW}}</p>
     <h1>{{SHORT_TITLE}}</h1>
     <div class="quota-title-accent" aria-hidden="true"></div>
-    <p class="summary">{{DESCRIPTION}}</p>
     <p class="updated">{{UPDATED_LABEL}} <time datetime="{{UPDATED_AT}}">{{UPDATED_AT}}</time></p>
     <div class="stats">{{STATS}}</div>
   </header>
+  {{SECTIONS}}
   <section class="answer" aria-labelledby="{{ANSWER_TITLE_ID}}">
     <h2 id="{{ANSWER_TITLE_ID}}">{{ANSWER_TITLE}}</h2>
     <p>{{ANSWER_TEXT}}</p>
   </section>
-  {{SECTIONS}}
   <section class="notice" aria-labelledby="{{NOTICE_TITLE_ID}}">
     <h2 id="{{NOTICE_TITLE_ID}}">{{NOTICE_TITLE}}</h2>
     <p>{{NOTICE_TEXT}}</p>
   </section>
   <footer class="site-footer quota-footer">
-    <a href="{{DATA_URL}}">{{DATA_LABEL}}</a>
-    <span aria-hidden="true"> · </span>{{FOOTER_TEXT}}
+    {{FOOTER_TEXT}}
   </footer>
 </article>

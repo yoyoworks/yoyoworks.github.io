@@ -3,6 +3,30 @@ const wechatDialog = document.getElementById("wechat-dialog");
 const wechatOpen = document.getElementById("wechat-open");
 const wechatClose = document.getElementById("wechat-close");
 
+function initializeSiteFooter() {
+  let footers = Array.from(document.querySelectorAll(".site-footer"));
+
+  if (footers.length === 0) {
+    const footer = document.createElement("footer");
+    footer.className = "site-footer site-footer-global";
+    (document.querySelector("main") || document.body).append(footer);
+    footers = [footer];
+  }
+
+  footers.forEach((footer) => {
+    if (footer.querySelector(".site-footer-legal")) {
+      return;
+    }
+
+    const legal = document.createElement("span");
+    legal.className = "site-footer-legal";
+    legal.textContent = `© ${new Date().getFullYear()} YOYOworks. All rights reserved.`;
+    footer.append(legal);
+  });
+}
+
+initializeSiteFooter();
+
 document.addEventListener("click", (event) => {
   if (projectsMenu && !projectsMenu.contains(event.target)) {
     projectsMenu.removeAttribute("open");

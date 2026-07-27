@@ -96,6 +96,7 @@ summary:focus-visible {
   font: inherit;
   font-size: 14px;
   text-decoration: none;
+  white-space: nowrap;
   cursor: pointer;
   transition: background 160ms ease;
 }
@@ -103,6 +104,12 @@ summary:focus-visible {
 .nav-link:hover,
 .projects-summary:hover {
   background: rgba(255, 255, 255, 0.72);
+}
+
+.nav-language {
+  border: 1px solid var(--yw-line);
+  background: rgba(252, 251, 247, 0.72);
+  font-weight: 650;
 }
 
 .projects-menu {
@@ -225,6 +232,22 @@ summary:focus-visible {
   font-size: 13px;
 }
 
+.site-footer-legal {
+  display: block;
+  margin-top: 6px;
+}
+
+.site-footer-legal:first-child {
+  margin-top: 0;
+}
+
+.site-footer-global {
+  width: min(1180px, calc(100% - 32px));
+  margin-right: auto;
+  margin-bottom: 32px;
+  margin-left: auto;
+}
+
 .qr-dialog {
   width: min(calc(100% - 32px), 360px);
   padding: 0;
@@ -303,6 +326,33 @@ summary:focus-visible {
 
   .projects-list {
     width: 196px;
+  }
+}
+
+@media (max-width: 360px) {
+  .site-nav {
+    gap: 6px;
+    padding: 10px;
+  }
+
+  .brand {
+    font-size: 13px;
+    letter-spacing: 0.1em;
+  }
+
+  .nav-links {
+    gap: 1px;
+  }
+
+  .nav-link,
+  .projects-summary {
+    min-height: 36px;
+    padding: 0 7px;
+    font-size: 12px;
+  }
+
+  .projects-summary::after {
+    margin-left: 4px;
   }
 }
 

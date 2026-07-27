@@ -38,7 +38,7 @@ COPY = {
     "en": {
         "html_lang": "en",
         "updated": "Last updated:",
-        "eyebrow": "Official sources · Periodically verified",
+        "eyebrow": "Official sources · Verified",
         "answer_title": "Where can developers get free AI tokens, credits, or API trials?",
         "answer_text": "This page lists international AI APIs, model routers, coding tools, agents, and multimodal services with official references, verification dates, and direct signup links.",
         "notice_title": "Important note",
@@ -147,8 +147,7 @@ def reference_label(item: dict[str, Any], language: str) -> str:
 
 
 def signup_label(item: dict[str, Any], language: str) -> str:
-    key = "label_zh" if language == "zh" else "label_en"
-    return item["signup"].get(key, "注册 / 进入" if language == "zh" else "Open service")
+    return "前往官网" if language == "zh" else "Open service"
 
 
 def canonical_site_url(seo: dict[str, Any]) -> str:
@@ -255,7 +254,6 @@ def render_panel(
     data: dict[str, Any],
     seo: dict[str, Any],
     language: str,
-    language_nav: str,
     panel_attributes: str = "",
     data_url: str = "../data/ai-free-quotas.json",
 ) -> str:
@@ -274,8 +272,6 @@ def render_panel(
         stats = stat(len(selected), copy["total"])
     return render("panel.html", {
         "PANEL_ATTRIBUTES": panel_attributes,
-        "LANGUAGE_NAV_LABEL": escape(copy["nav_label"]),
-        "LANGUAGE_NAV": language_nav,
         "EYEBROW": escape(copy["eyebrow"]),
         "SHORT_TITLE": escape(seo["short_title_zh" if zh else "short_title_en"]),
         "DESCRIPTION": escape(seo["description_zh" if zh else "description_en"]),
@@ -314,9 +310,9 @@ def render_page(data: dict[str, Any], seo: dict[str, Any], language: str) -> str
     title = seo["title_zh" if zh else "title_en"]
     description = seo["description_zh" if zh else "description_en"]
     if zh:
-        language_nav = '<a href="../us/" lang="en">English</a>'
+        language_nav = '<a class="nav-link nav-language" href="../us/" lang="en">English</a>'
     else:
-        language_nav = '<a href="../zh/" lang="zh-CN">中文</a>'
+        language_nav = '<a class="nav-link nav-language" href="../zh/" lang="zh-CN">中文</a>'
     return render("page.html", {
         "HTML_LANG": copy["html_lang"],
         "SEO_TITLE": escape(title),
@@ -327,7 +323,8 @@ def render_page(data: dict[str, Any], seo: dict[str, Any], language: str) -> str
         "EN_URL": escape(en_url),
         "ROOT_URL": escape(root_url),
         "STRUCTURED_DATA": structured_data(data, seo, language, canonical, selected),
-        "PANEL": render_panel(data, seo, language, language_nav),
+        "LANGUAGE_NAV": language_nav,
+        "PANEL": render_panel(data, seo, language),
     })
 
 
@@ -357,7 +354,6 @@ def render_app(data: dict[str, Any], seo: dict[str, Any]) -> str:
             data,
             seo,
             "zh",
-            '<button type="button" data-language-choice="en">English</button>',
             zh_attributes,
             "./data/ai-free-quotas.json",
         ),
@@ -365,7 +361,6 @@ def render_app(data: dict[str, Any], seo: dict[str, Any]) -> str:
             data,
             seo,
             "en",
-            '<button type="button" data-language-choice="zh">中文</button>',
             en_attributes,
             "./data/ai-free-quotas.json",
         ),
