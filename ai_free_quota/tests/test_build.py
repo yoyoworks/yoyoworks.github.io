@@ -10,6 +10,7 @@ from pathlib import Path
 from unittest.mock import patch
 
 ROOT = Path(__file__).resolve().parents[1]
+REPO_ROOT = ROOT.parent
 SPEC = importlib.util.spec_from_file_location("site_build", ROOT / "scripts/build.py")
 assert SPEC and SPEC.loader
 SITE_BUILD = importlib.util.module_from_spec(SPEC)
@@ -57,7 +58,7 @@ class BuildTests(unittest.TestCase):
             self.assertEqual(len(ids), len(set(ids)))
 
     def test_shared_theme_contract(self) -> None:
-        theme = (ROOT.parent / "assets/theme.css").read_text(encoding="utf-8")
+        theme = (REPO_ROOT / "assets/theme.css").read_text(encoding="utf-8")
         expected = {
             "--yw-paper": "#f8f6f1",
             "--yw-surface": "#fcfbf7",
@@ -72,6 +73,27 @@ class BuildTests(unittest.TestCase):
         }
         for name, value in expected.items():
             self.assertIn(f"{name}: {value};", theme)
+
+    def test_shared_control_contract(self) -> None:
+        theme = (REPO_ROOT / "assets/theme.css").read_text(encoding="utf-8")
+        master = (REPO_ROOT / "design-system/MASTER.md").read_text(encoding="utf-8")
+        skill = (REPO_ROOT / ".agents/skills/yoyoworks-ui/SKILL.md").read_text(encoding="utf-8")
+        row = (ROOT / "src/templates/row.html").read_text(encoding="utf-8")
+        panel = (ROOT / "src/templates/panel.html").read_text(encoding="utf-8")
+
+        for selector in (
+            ".yw-button",
+            ".yw-button--secondary",
+            ".yw-language-switch",
+            ".yw-text-link",
+        ):
+            self.assertIn(selector, theme)
+
+        self.assertIn("assets/theme.css", master)
+        self.assertIn("design-system/MASTER.md", skill)
+        self.assertIn("yw-button yw-button--secondary", row)
+        self.assertIn("yw-text-link yw-text-link--external", row)
+        self.assertNotIn("quota-actions", panel)
 
     def test_mobile_layout_uses_cards_without_horizontal_table_width(self) -> None:
         css = (ROOT / "src/static/site.css").read_text(encoding="utf-8")

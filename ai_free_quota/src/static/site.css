@@ -163,11 +163,9 @@
   margin-top: 18px;
   padding: 18px 22px;
   border: 1px solid var(--yw-line);
-  border-radius: 18px;
-  background: var(--yw-surface-glass);
-  box-shadow: var(--yw-shadow);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  border-radius: var(--yw-radius-card);
+  background: var(--yw-surface);
+  box-shadow: var(--yw-shadow-card);
 }
 
 .answer {
@@ -239,9 +237,9 @@
 .table-shell {
   overflow: hidden;
   border: 1px solid var(--yw-line);
-  border-radius: 20px;
+  border-radius: var(--yw-radius-table);
   background: var(--yw-surface);
-  box-shadow: var(--yw-shadow);
+  box-shadow: var(--yw-shadow-card);
 }
 
 .quota-table {
@@ -252,75 +250,62 @@
 
 .quota-table th,
 .quota-table td {
-  padding: 17px 18px;
+  padding: var(--yw-space-4);
   border-bottom: 1px solid var(--yw-line);
   overflow-wrap: anywhere;
+  line-height: 1.5;
   text-align: left;
   vertical-align: top;
 }
 
 .quota-table thead th {
   color: var(--yw-ink);
-  background: rgba(65, 107, 150, 0.08);
+  background: var(--yw-tint-blue-soft);
   font-size: 13px;
 }
 
 .quota-table thead th:nth-child(1),
 .quota-table tbody th {
-  width: 18%;
+  width: var(--yw-directory-platform-column);
 }
 
 .quota-table thead th:nth-child(2),
 .quota-table td:nth-child(2) {
-  width: 50%;
+  width: var(--yw-directory-quota-column);
 }
 
 .quota-table thead th:nth-child(3),
 .quota-table td:nth-child(3) {
-  width: 14%;
+  width: var(--yw-directory-reference-column);
 }
 
 .quota-table thead th:nth-child(4),
 .quota-table td:nth-child(4) {
-  width: 18%;
+  width: var(--yw-directory-action-column);
+}
+
+.quota-table thead th:nth-child(3),
+.quota-table thead th:nth-child(4),
+.quota-table td:nth-child(3),
+.quota-table td:nth-child(4) {
+  text-align: center;
+}
+
+.quota-table td.row-action {
+  vertical-align: middle;
 }
 
 .quota-table tbody tr:last-child > * {
   border-bottom: 0;
 }
 
-.quota-table a {
-  color: var(--yw-blue);
-  text-decoration-thickness: 1px;
-  text-underline-offset: 3px;
-}
-
 .platform {
-  font-weight: 750;
+  font-weight: 650;
 }
 
 .signup {
-  display: inline-flex;
-  width: 100%;
-  min-height: 40px;
-  align-items: center;
-  justify-content: center;
-  padding: 7px 11px;
-  border: 1px solid var(--yw-blue);
-  border-radius: 10px;
-  box-sizing: border-box;
-  color: var(--yw-navy) !important;
-  background: var(--yw-surface);
-  font-weight: 700;
-  line-height: 1.2;
-  text-align: center;
-  text-decoration: none;
-  white-space: nowrap;
-}
-
-.signup:hover {
-  color: #fff !important;
-  background: var(--yw-navy);
+  width: var(--yw-directory-action-width);
+  margin-inline: auto;
 }
 
 .quota-footer {
@@ -420,11 +405,9 @@
   .quota-table tbody tr {
     overflow: hidden;
     border: 1px solid var(--yw-line);
-    border-radius: 16px;
-    background: var(--yw-surface-glass);
-    box-shadow: 0 8px 24px rgba(24, 36, 59, 0.06);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    border-radius: var(--yw-radius-card);
+    background: var(--yw-surface);
+    box-shadow: var(--yw-shadow-card);
   }
 
   .quota-table tbody th,
@@ -434,9 +417,10 @@
   }
 
   .quota-table tbody th.platform {
-    padding: 15px;
-    background: rgba(65, 107, 150, 0.08);
-    font-size: 18px;
+    padding: var(--yw-space-4);
+    background: var(--yw-tint-blue-soft);
+    font-size: var(--yw-font-body);
+    font-weight: 650;
   }
 
   .quota-table td::before {
@@ -450,20 +434,38 @@
 
   .quota-table .row-action {
     display: grid;
-    grid-template-columns: minmax(84px, 0.35fr) 1fr;
+    grid-template-columns: minmax(var(--yw-directory-label-min), 1fr) auto;
     align-items: center;
-    gap: 10px;
+    gap: var(--yw-space-3);
+    text-align: left;
+  }
+
+  .quota-table td.row-action {
+    text-align: left;
   }
 
   .quota-table .row-action::before {
     margin: 0;
+    text-align: left;
   }
 
-  .quota-table .row-action a {
-    display: inline-flex;
-    min-height: 44px;
-    align-items: center;
-    justify-content: center;
+  .quota-table .row-action .yw-text-link,
+  .quota-table .row-action .signup {
+    justify-self: end;
+  }
+
+  .quota-table .row-action .signup {
+    width: var(--yw-directory-action-width-mobile);
+  }
+}
+
+@media (max-width: 360px) {
+  .quota-hero {
+    padding: var(--yw-space-4);
+  }
+
+  .quota-hero h1 {
+    font-size: var(--yw-font-hero-compact);
   }
 }
 
