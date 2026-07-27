@@ -207,13 +207,14 @@ summary:focus-visible {
 .button.primary,
 .contact-link.primary {
   border-color: var(--yw-navy);
-  color: #fff;
-  background: var(--yw-navy);
+  color: var(--yw-navy);
+  background: rgba(255, 255, 255, 0.72);
 }
 
 .button.primary:hover,
 .contact-link.primary:hover {
-  background: var(--yw-blue);
+  color: #fff;
+  background: var(--yw-navy);
 }
 
 .site-footer {

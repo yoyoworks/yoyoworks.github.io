@@ -258,7 +258,7 @@
     },
     {
       "id": "alibaba-model-studio-sg",
-      "display_order": 13,
+      "display_order": 28,
       "category": "international",
       "platform_zh": "阿里云百炼 Model Studio（新加坡）",
       "platform_en": "Alibaba Cloud Model Studio (Singapore)",
@@ -279,7 +279,7 @@
     },
     {
       "id": "tencent-miora",
-      "display_order": 28,
+      "display_order": 13,
       "category": "international",
       "platform_zh": "腾讯 Miora",
       "platform_en": "Tencent Design Miora",

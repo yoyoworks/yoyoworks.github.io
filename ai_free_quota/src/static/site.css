@@ -296,15 +296,17 @@
   min-height: 40px;
   align-items: center;
   padding: 7px 11px;
-  border-radius: 999px;
-  color: #fff !important;
-  background: var(--yw-navy);
+  border: 1px solid var(--yw-blue);
+  border-radius: 10px;
+  color: var(--yw-navy) !important;
+  background: var(--yw-surface);
   font-weight: 700;
   text-decoration: none;
 }
 
 .signup:hover {
-  background: var(--yw-blue);
+  color: #fff !important;
+  background: var(--yw-navy);
 }
 
 .quota-footer {
