@@ -14,6 +14,19 @@ htmlcov/
 venv/
 env/
 
+# Frontend dependencies
+node_modules/
+bower_components/
+jspm_packages/
+.pnpm-store/
+
+# Yarn modern cache and install state
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
 # Local environment files
 .env
 .env.*
@@ -23,6 +36,38 @@ env/
 _site/
 dist/
 build/
+out/
+
+# Frontend framework and bundler output
+.next/
+.nuxt/
+.output/
+.svelte-kit/
+.angular/
+.cache/
+.parcel-cache/
+.vite/
+.turbo/
+storybook-static/
+*.tsbuildinfo
+
+# Test and coverage output
+coverage/
+playwright-report/
+test-results/
+blob-report/
+
+# Package manager and development logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Deployment platform metadata
+.vercel/
+.netlify/
 
 # Editors and IDEs
 .vscode/
