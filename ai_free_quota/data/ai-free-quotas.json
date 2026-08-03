@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-08-01",
+  "updated_at": "2026-08-03",
   "date_published": "2026-07-23",
   "sections": [
     {
@@ -573,6 +573,27 @@
         "is_referral": false
       },
       "verified_at": "2026-08-01"
+    },
+    {
+      "id": "chatcut",
+      "display_order": 30,
+      "category": "international",
+      "platform_zh": "ChatCut",
+      "platform_en": "ChatCut",
+      "quota_zh": "免费版无需信用卡；新用户注册可一次性获得 20 Credits，自发放起 365 天有效。上传、自动转录、手动剪辑、播放预览和标准导出不消耗 Credits；AI 对话、内容生成和云端渲染按实际操作消耗。",
+      "quota_en": "The Free plan requires no credit card. New users receive a one-time grant of 20 credits, valid for 365 days. Uploads, auto-transcription, manual editing, playback and previews, and standard exports do not use credits; AI agent work, content generation, and cloud rendering consume credits per action.",
+      "reference": {
+        "label_zh": "ChatCut Credits 政策",
+        "label_en": "ChatCut credits policy",
+        "url": "https://chatcut.io/docs/credits-policy"
+      },
+      "signup": {
+        "label_zh": "邀请注册 ChatCut",
+        "label_en": "Referral signup for ChatCut",
+        "url": "https://app.chatcut.io/?referred_by=1eMOomIinZhbPe1JaxNhRfQnJOTw5tOv",
+        "is_referral": true
+      },
+      "verified_at": "2026-08-03"
     }
   ]
 }
