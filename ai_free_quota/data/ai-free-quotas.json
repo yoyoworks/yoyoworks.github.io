@@ -243,7 +243,7 @@
     },
     {
       "id": "alibaba-model-studio-sg",
-      "display_order": 28,
+      "display_order": 29,
       "category": "international",
       "platform_zh": "阿里云百炼 Model Studio（新加坡）",
       "platform_en": "Alibaba Cloud Model Studio (Singapore)",
@@ -264,7 +264,7 @@
     },
     {
       "id": "tencent-miora",
-      "display_order": 13,
+      "display_order": 14,
       "category": "international",
       "platform_zh": "腾讯 Miora",
       "platform_en": "Tencent Design Miora",
@@ -285,7 +285,7 @@
     },
     {
       "id": "google-gemini-api",
-      "display_order": 19,
+      "display_order": 20,
       "category": "international",
       "platform_zh": "Google Gemini API / AI Studio",
       "platform_en": "Google Gemini API / AI Studio",
@@ -306,7 +306,7 @@
     },
     {
       "id": "openrouter",
-      "display_order": 25,
+      "display_order": 26,
       "category": "international",
       "platform_zh": "OpenRouter",
       "platform_en": "OpenRouter",
@@ -327,7 +327,7 @@
     },
     {
       "id": "github-models",
-      "display_order": 18,
+      "display_order": 19,
       "category": "international",
       "platform_zh": "GitHub Models",
       "platform_en": "GitHub Models",
@@ -348,7 +348,7 @@
     },
     {
       "id": "nvidia-nim",
-      "display_order": 24,
+      "display_order": 25,
       "category": "international",
       "platform_zh": "NVIDIA NIM",
       "platform_en": "NVIDIA NIM",
@@ -369,7 +369,7 @@
     },
     {
       "id": "cloudflare-workers-ai",
-      "display_order": 15,
+      "display_order": 16,
       "category": "international",
       "platform_zh": "Cloudflare Workers AI",
       "platform_en": "Cloudflare Workers AI",
@@ -390,7 +390,7 @@
     },
     {
       "id": "hugging-face-inference",
-      "display_order": 21,
+      "display_order": 22,
       "category": "international",
       "platform_zh": "Hugging Face Inference Providers",
       "platform_en": "Hugging Face Inference Providers",
@@ -411,7 +411,7 @@
     },
     {
       "id": "mistral-api",
-      "display_order": 23,
+      "display_order": 24,
       "category": "international",
       "platform_zh": "Mistral API",
       "platform_en": "Mistral API",
@@ -432,7 +432,7 @@
     },
     {
       "id": "cohere",
-      "display_order": 16,
+      "display_order": 17,
       "category": "international",
       "platform_zh": "Cohere",
       "platform_en": "Cohere",
@@ -453,7 +453,7 @@
     },
     {
       "id": "meta-model-api",
-      "display_order": 22,
+      "display_order": 23,
       "category": "international",
       "platform_zh": "Meta Model API",
       "platform_en": "Meta Model API",
@@ -470,7 +470,7 @@
     },
     {
       "id": "fireworks-ai",
-      "display_order": 17,
+      "display_order": 18,
       "category": "international",
       "platform_zh": "Fireworks AI",
       "platform_en": "Fireworks AI",
@@ -487,7 +487,7 @@
     },
     {
       "id": "replicate-try-free",
-      "display_order": 26,
+      "display_order": 27,
       "category": "international",
       "platform_zh": "Replicate Try for Free",
       "platform_en": "Replicate Try for Free",
@@ -504,7 +504,7 @@
     },
     {
       "id": "groqcloud",
-      "display_order": 20,
+      "display_order": 21,
       "category": "international",
       "platform_zh": "GroqCloud",
       "platform_en": "GroqCloud",
@@ -521,7 +521,7 @@
     },
     {
       "id": "cerebras-inference",
-      "display_order": 14,
+      "display_order": 15,
       "category": "international",
       "platform_zh": "Cerebras Inference",
       "platform_en": "Cerebras Inference",
@@ -538,7 +538,7 @@
     },
     {
       "id": "sambanova-cloud",
-      "display_order": 27,
+      "display_order": 28,
       "category": "international",
       "platform_zh": "SambaNova Cloud",
       "platform_en": "SambaNova Cloud",
@@ -555,7 +555,7 @@
     },
     {
       "id": "vercel-ai-gateway",
-      "display_order": 29,
+      "display_order": 30,
       "category": "international",
       "platform_zh": "Vercel AI Gateway",
       "platform_en": "Vercel AI Gateway",
@@ -576,7 +576,7 @@
     },
     {
       "id": "chatcut",
-      "display_order": 30,
+      "display_order": 13,
       "category": "international",
       "platform_zh": "ChatCut",
       "platform_en": "ChatCut",
