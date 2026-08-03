@@ -21,7 +21,7 @@ class BuildTests(unittest.TestCase):
     def test_dataset_is_valid(self) -> None:
         data = json.loads((ROOT / "data/ai-free-quotas.json").read_text(encoding="utf-8"))
         SITE_BUILD.validate(data)
-        self.assertEqual(29, len(data["entries"]))
+        self.assertEqual(30, len(data["entries"]))
 
     def test_build_produces_complete_static_site(self) -> None:
         with tempfile.TemporaryDirectory() as directory:

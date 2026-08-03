@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-07-27",
+  "updated_at": "2026-08-03",
   "date_published": "2026-07-23",
   "sections": [
     {
@@ -38,7 +38,7 @@
         "url": "https://bigmodel.cn/",
         "is_referral": false
       },
-      "verified_at": "2026-07-27"
+      "verified_at": "2026-08-01"
     },
     {
       "id": "baidu-qianfan",
@@ -59,7 +59,7 @@
         "url": "https://cloud.baidu.com/product/qianfan.html",
         "is_referral": false
       },
-      "verified_at": "2026-07-27"
+      "verified_at": "2026-08-01"
     },
     {
       "id": "tencent-tokenhub",
@@ -80,7 +80,7 @@
         "url": "https://console.cloud.tencent.com/tokenhub",
         "is_referral": false
       },
-      "verified_at": "2026-07-27"
+      "verified_at": "2026-08-01"
     },
     {
       "id": "workbuddy-codebuddy",
@@ -101,7 +101,7 @@
         "url": "https://www.workbuddy.cn/events/invite?inviteCode=l6vhzq5rk",
         "is_referral": true
       },
-      "verified_at": "2026-07-27"
+      "verified_at": "2026-08-01"
     },
     {
       "id": "qoder-cn",
@@ -109,8 +109,8 @@
       "category": "china",
       "platform_zh": "阿里 Qoder CN 全家桶",
       "platform_en": "Alibaba Qoder CN Suite",
-      "quota_zh": "体验版免费，含 2 周 Pro 试用和 300 Credits；Credits 可在 IDE、JetBrains、QoderWork、CLI、QoderWake 与 Mobile 间共享。Qwen3.7-Max 限时活动截至 2026 年 7 月 31 日：QoderWork 与 Qoder CLI 每天可用 200 次免费模型请求。",
-      "quota_en": "The free tier includes a two-week Pro trial and 300 credits shared across IDE, JetBrains, QoderWork, CLI, QoderWake, and Mobile. Through July 31, 2026, QoderWork and Qoder CLI also include 200 free Qwen3.7-Max model requests per day.",
+      "quota_zh": "体验版免费，含 2 周专业版试用和 300 Credits；Credits 在 QoderWork CN、Qoder CN CLI、Qoder CN IDE 等全家桶产品间共享。",
+      "quota_en": "The free tier includes a two-week Pro trial and 300 credits shared across the Qoder CN suite, including QoderWork CN, Qoder CN CLI, and Qoder CN IDE.",
       "reference": {
         "label_zh": "账号与订阅",
         "label_en": "Accounts and subscriptions",
@@ -122,7 +122,7 @@
         "url": "https://qoder.com.cn/",
         "is_referral": false
       },
-      "verified_at": "2026-07-27"
+      "verified_at": "2026-08-01"
     },
     {
       "id": "xiaomi-mimo-code",
@@ -137,7 +137,7 @@
         "url": "https://mimo.xiaomi.com/",
         "is_referral": false
       },
-      "verified_at": "2026-07-27"
+      "verified_at": "2026-08-01"
     },
     {
       "id": "volcengine-ark",
@@ -158,7 +158,7 @@
         "url": "https://console.volcengine.com/ark/",
         "is_referral": false
       },
-      "verified_at": "2026-07-27"
+      "verified_at": "2026-08-01"
     },
     {
       "id": "volcengine-ark-kb",
@@ -179,7 +179,7 @@
         "url": "https://console.volcengine.com/ark/",
         "is_referral": false
       },
-      "verified_at": "2026-07-27"
+      "verified_at": "2026-08-01"
     },
     {
       "id": "alibaba-model-studio-cn",
@@ -194,7 +194,7 @@
         "url": "https://bailian.console.aliyun.com/",
         "is_referral": false
       },
-      "verified_at": "2026-07-27"
+      "verified_at": "2026-08-01"
     },
     {
       "id": "modelscope-api-inference",
@@ -209,7 +209,7 @@
         "url": "https://modelscope.cn/my/myaccesstoken",
         "is_referral": false
       },
-      "verified_at": "2026-07-27"
+      "verified_at": "2026-08-01"
     },
     {
       "id": "siliconflow-free-models",
@@ -224,7 +224,7 @@
         "url": "https://cloud.siliconflow.cn/",
         "is_referral": false
       },
-      "verified_at": "2026-07-27"
+      "verified_at": "2026-08-01"
     },
     {
       "id": "iflytek-spark-lite",
@@ -239,22 +239,7 @@
         "url": "https://console.xfyun.cn/services/sparkapiCenter",
         "is_referral": false
       },
-      "verified_at": "2026-07-27"
-    },
-    {
-      "id": "stepfun-step-plan",
-      "display_order": 7,
-      "category": "china",
-      "platform_zh": "阶跃星辰 Step Plan",
-      "quota_zh": "新用户可免费体验 Flash Mini 15 天，套餐标称每月 4 亿 Credits；活动截至 2026 年 7 月 31 日。每邀请 1 位好友可延长 15 天，累计最高 90 天，并支持旗舰模型与智能路由。",
-      "reference": {
-        "url": "https://platform.stepfun.com/plan-subscribe"
-      },
-      "signup": {
-        "url": "https://platform.stepfun.com/plan-subscribe",
-        "is_referral": false
-      },
-      "verified_at": "2026-07-27"
+      "verified_at": "2026-08-01"
     },
     {
       "id": "alibaba-model-studio-sg",
@@ -275,7 +260,7 @@
         "url": "https://modelstudio.console.alibabacloud.com/",
         "is_referral": false
       },
-      "verified_at": "2026-07-27"
+      "verified_at": "2026-08-01"
     },
     {
       "id": "tencent-miora",
@@ -296,7 +281,7 @@
         "url": "https://miora.design/login",
         "is_referral": false
       },
-      "verified_at": "2026-07-27"
+      "verified_at": "2026-08-01"
     },
     {
       "id": "google-gemini-api",
@@ -317,7 +302,7 @@
         "url": "https://aistudio.google.com/",
         "is_referral": false
       },
-      "verified_at": "2026-07-27"
+      "verified_at": "2026-08-01"
     },
     {
       "id": "openrouter",
@@ -338,7 +323,7 @@
         "url": "https://openrouter.ai/",
         "is_referral": false
       },
-      "verified_at": "2026-07-27"
+      "verified_at": "2026-08-01"
     },
     {
       "id": "github-models",
@@ -359,7 +344,7 @@
         "url": "https://github.com/marketplace/models",
         "is_referral": false
       },
-      "verified_at": "2026-07-27"
+      "verified_at": "2026-08-01"
     },
     {
       "id": "nvidia-nim",
@@ -380,7 +365,7 @@
         "url": "https://build.nvidia.com/explore/discover",
         "is_referral": false
       },
-      "verified_at": "2026-07-27"
+      "verified_at": "2026-08-01"
     },
     {
       "id": "cloudflare-workers-ai",
@@ -401,7 +386,7 @@
         "url": "https://dash.cloudflare.com/",
         "is_referral": false
       },
-      "verified_at": "2026-07-27"
+      "verified_at": "2026-08-01"
     },
     {
       "id": "hugging-face-inference",
@@ -422,7 +407,7 @@
         "url": "https://huggingface.co/join",
         "is_referral": false
       },
-      "verified_at": "2026-07-27"
+      "verified_at": "2026-08-01"
     },
     {
       "id": "mistral-api",
@@ -443,7 +428,7 @@
         "url": "https://console.mistral.ai/",
         "is_referral": false
       },
-      "verified_at": "2026-07-27"
+      "verified_at": "2026-08-01"
     },
     {
       "id": "cohere",
@@ -464,7 +449,7 @@
         "url": "https://dashboard.cohere.com/welcome/register",
         "is_referral": false
       },
-      "verified_at": "2026-07-27"
+      "verified_at": "2026-08-01"
     },
     {
       "id": "meta-model-api",
@@ -481,7 +466,7 @@
         "url": "https://ai.developer.meta.com/",
         "is_referral": false
       },
-      "verified_at": "2026-07-27"
+      "verified_at": "2026-08-01"
     },
     {
       "id": "fireworks-ai",
@@ -498,7 +483,7 @@
         "url": "https://app.fireworks.ai/",
         "is_referral": false
       },
-      "verified_at": "2026-07-27"
+      "verified_at": "2026-08-01"
     },
     {
       "id": "replicate-try-free",
@@ -515,7 +500,7 @@
         "url": "https://replicate.com/signin",
         "is_referral": false
       },
-      "verified_at": "2026-07-27"
+      "verified_at": "2026-08-01"
     },
     {
       "id": "groqcloud",
@@ -532,7 +517,7 @@
         "url": "https://console.groq.com/keys",
         "is_referral": false
       },
-      "verified_at": "2026-07-27"
+      "verified_at": "2026-08-01"
     },
     {
       "id": "cerebras-inference",
@@ -549,7 +534,7 @@
         "url": "https://cloud.cerebras.ai/",
         "is_referral": false
       },
-      "verified_at": "2026-07-27"
+      "verified_at": "2026-08-01"
     },
     {
       "id": "sambanova-cloud",
@@ -566,7 +551,49 @@
         "url": "https://cloud.sambanova.ai/",
         "is_referral": false
       },
-      "verified_at": "2026-07-27"
+      "verified_at": "2026-08-01"
+    },
+    {
+      "id": "vercel-ai-gateway",
+      "display_order": 29,
+      "category": "international",
+      "platform_zh": "Vercel AI Gateway",
+      "platform_en": "Vercel AI Gateway",
+      "quota_zh": "每个 Vercel 团队账号每月包含 5 美元 AI Gateway 免费 Credits，可用于免费层适用模型；免费额度从首次请求开始计算。购买 Credits 后账号转为付费层，不再享受每月免费额度。",
+      "quota_en": "Each Vercel team account includes $5 per month in free AI Gateway credits for free-tier-eligible models. The allowance starts with the first request; purchasing credits moves the account to the paid tier and ends the monthly free credit.",
+      "reference": {
+        "label_zh": "AI Gateway 定价",
+        "label_en": "AI Gateway pricing",
+        "url": "https://vercel.com/docs/ai-gateway/pricing"
+      },
+      "signup": {
+        "label_zh": "注册 Vercel",
+        "label_en": "Sign up for Vercel",
+        "url": "https://vercel.com/signup",
+        "is_referral": false
+      },
+      "verified_at": "2026-08-01"
+    },
+    {
+      "id": "chatcut",
+      "display_order": 30,
+      "category": "international",
+      "platform_zh": "ChatCut",
+      "platform_en": "ChatCut",
+      "quota_zh": "免费版无需信用卡；新用户注册可一次性获得 20 Credits，自发放起 365 天有效。上传、自动转录、手动剪辑、播放预览和标准导出不消耗 Credits；AI 对话、内容生成和云端渲染按实际操作消耗。",
+      "quota_en": "The Free plan requires no credit card. New users receive a one-time grant of 20 credits, valid for 365 days. Uploads, auto-transcription, manual editing, playback and previews, and standard exports do not use credits; AI agent work, content generation, and cloud rendering consume credits per action.",
+      "reference": {
+        "label_zh": "ChatCut Credits 政策",
+        "label_en": "ChatCut credits policy",
+        "url": "https://chatcut.io/docs/credits-policy"
+      },
+      "signup": {
+        "label_zh": "邀请注册 ChatCut",
+        "label_en": "Referral signup for ChatCut",
+        "url": "https://app.chatcut.io/?referred_by=1eMOomIinZhbPe1JaxNhRfQnJOTw5tOv",
+        "is_referral": true
+      },
+      "verified_at": "2026-08-03"
     }
   ]
 }
