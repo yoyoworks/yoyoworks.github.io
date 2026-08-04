@@ -20,8 +20,9 @@ SPEC.loader.exec_module(SITE_BUILD)
 class BuildTests(unittest.TestCase):
     def test_home_project_link_stays_on_current_origin(self) -> None:
         home = (REPO_ROOT / "index.html").read_text(encoding="utf-8")
-        self.assertIn('href="/ai_free_quota/"', home)
+        self.assertIn('<a class="project-item" href="/ai_free_quota/">', home)
         self.assertNotIn('href="https://yoyoworks.github.io/ai_free_quota/"', home)
+        self.assertNotIn('Free AI Quota<span aria-hidden="true">↗</span>', home)
 
     def test_dataset_is_valid(self) -> None:
         data = json.loads((ROOT / "data/ai-free-quotas.json").read_text(encoding="utf-8"))

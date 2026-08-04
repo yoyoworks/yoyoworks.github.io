@@ -1,0 +1,4 @@
+{
+  "buildCommand": "python3 -m unittest discover -s ai_free_quota/tests -v && python3 ai_free_quota/scripts/build.py --output _site/ai_free_quota && cp index.html .nojekyll _site/ && cp -R assets _site/assets",
+  "outputDirectory": "./_site"
+}
